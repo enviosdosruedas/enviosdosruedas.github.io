@@ -1,0 +1,118 @@
+/* Hero Section - Sobre Nosotros */
+#banner-principal.hero {
+    width: 100%;
+    min-height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(120deg, #3498db 0%, #2c3e50 100%);
+    color: #fff;
+    padding: 3rem 1rem 2rem 1rem;
+    box-shadow: 0 4px 24px rgba(44,62,80,0.08);
+    border-radius: 0 0 2rem 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+#banner-principal .hero-content {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+    z-index: 2;
+    position: relative;
+}
+
+#banner-principal h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    letter-spacing: 1px;
+    color: #ffd700;
+    text-shadow: 0 2px 8px rgba(44,62,80,0.15);
+}
+
+#banner-principal h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+    color: #fff;
+    text-shadow: 0 1px 4px rgba(44,62,80,0.10);
+}
+
+#banner-principal .hero-highlight {
+    background: rgba(255,255,255,0.10);
+    border-radius: 1rem;
+    padding: 1.2rem 1rem;
+    margin: 0 auto;
+    display: inline-block;
+    box-shadow: 0 2px 8px rgba(44,62,80,0.07);
+}
+
+#banner-principal .hero-highlight p {
+    color: #fff;
+    font-size: 1.1rem;
+    margin: 0;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+}
+
+/* Efecto decorativo opcional */
+#banner-principal::before {
+    content: "";
+    position: absolute;
+    top: -60px;
+    left: -60px;
+    width: 180px;
+    height: 180px;
+    background: rgba(255,215,0,0.10);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+#banner-principal::after {
+    content: "";
+    position: absolute;
+    bottom: -40px;
+    right: -40px;
+    width: 120px;
+    height: 120px;
+    background: rgba(255,255,255,0.08);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    #banner-principal.hero {
+        min-height: 30vh;
+        padding: 2rem 0.5rem 1.5rem 0.5rem;
+        border-radius: 0 0 1.2rem 1.2rem;
+    }
+    #banner-principal h1 {
+        font-size: 2rem;
+    }
+    #banner-principal h2 {
+        font-size: 1.15rem;
+    }
+    #banner-principal .hero-content {
+        max-width: 95vw;
+    }
+}
+
+@media (max-width: 480px) {
+    #banner-principal.hero {
+        min-height: 22vh;
+        padding: 1.2rem 0.2rem 1rem 0.2rem;
+        border-radius: 0 0 0.7rem 0.7rem;
+    }
+    #banner-principal h1 {
+        font-size: 1.3rem;
+    }
+    #banner-principal h2 {
+        font-size: 1rem;
+    }
+    #banner-principal .hero-highlight {
+        padding: 0.7rem 0.5rem;
+        font-size: 0.97rem;
+    }
+}

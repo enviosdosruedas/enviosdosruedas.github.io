@@ -1,0 +1,247 @@
+/* Estilos específicos para el footer */
+.main-footer {
+    background: var(--footer-bg);
+    color: var(--footer-text);
+    border-radius: 0 !important;
+    padding: var(--spacing-xl) 0 var(--spacing-md);
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--footer-gap);
+    margin-bottom: var(--spacing-xl);
+}
+
+/* Logo del footer */
+.footer-logo-flex {
+    gap: 10px !important;
+}
+
+.footer-logo-link {
+    height: fit-content !important;
+    width: fit-content !important;
+}
+
+.footer-logo-img {
+    max-width: 100px;
+    height: auto !important;
+    margin-bottom: 25px;
+    filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.2));
+    width: auto !important;
+}
+
+.footer-spacer {
+    margin-bottom: 20px !important;
+}
+
+/* Títulos del footer */
+.footer-title {
+    font-size: var(--font-size-lg);
+    margin-bottom: var(--spacing-lg);
+    color: var(--footer-accent);
+    font-weight: var(--font-weight-bold);
+}
+
+/* Enlaces del footer */
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: var(--spacing-sm);
+    position: relative;
+}
+
+.footer-links a {
+    color: var(--footer-text);
+    display: flex;
+    align-items: center;
+    transition: var(--transition);
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: var(--footer-accent);
+    transform: translateX(5px);
+}
+
+.footer-links i {
+    margin-right: var(--spacing-sm);
+    width: 20px;
+    text-align: center;
+}
+
+/* Dropdown en el footer */
+.footer-links .dropdown {
+    position: relative;
+}
+
+.footer-links .dropdown > a {
+    cursor: pointer;
+}
+
+.footer-links .dropdown-content {
+    display: none;
+    padding-left: var(--spacing-lg);
+    margin-top: var(--spacing-xs);
+}
+
+.footer-links .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.footer-links .dropdown-content a {
+    padding: var(--spacing-xs) 0;
+    font-size: 0.9em;
+}
+
+/* Información de contacto */
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+}
+
+.contact-item i {
+    color: var(--footer-accent);
+    font-size: 1.2em;
+    width: 25px;
+    text-align: center;
+}
+
+.whatsapp-link {
+    color: var(--footer-text);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.whatsapp-link:hover {
+    color: var(--footer-accent);
+}
+
+/* Redes sociales */
+.social-container {
+    margin-top: var(--spacing-lg);
+}
+
+.social-title {
+    font-size: var(--font-size-base);
+    margin-bottom: var(--spacing-sm);
+    color: var(--footer-text);
+}
+
+.social-links {
+    display: flex;
+    gap: var(--spacing-md);
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--footer-text);
+    transition: var(--transition);
+}
+
+.social-icon:hover {
+    background-color: var(--footer-accent);
+    color: var(--primary-color-dark);
+    transform: translateY(-3px);
+}
+
+.social-icon.instagram:hover {
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+}
+
+.social-icon.facebook:hover {
+    background-color: #3b5998;
+}
+
+.social-icon.whatsapp:hover {
+    background-color: #25d366;
+}
+
+/* Parte inferior del footer */
+.footer-bottom {
+    border-top: 1px solid var(--footer-border);
+    padding-top: var(--spacing-md);
+    text-align: center;
+}
+
+.copyright {
+    font-size: var(--font-size-sm);
+    opacity: 0.8;
+    margin-bottom: 0;
+}
+
+/* Botón volver arriba */
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--transition);
+    z-index: 999;
+    border: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.back-to-top.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.back-to-top:hover {
+    background-color: var(--secondary-color);
+    transform: translateY(-3px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-xl);
+    }
+    
+    .footer-logo, .footer-nav, .footer-contact {
+        text-align: center;
+    }
+    
+    .footer-links a, .contact-item {
+        justify-content: center;
+    }
+    
+    .social-links {
+        justify-content: center;
+    }
+    
+    .back-to-top {
+        bottom: 20px;
+        right: 20px;
+        width: 40px;
+        height: 40px;
+    }
+}

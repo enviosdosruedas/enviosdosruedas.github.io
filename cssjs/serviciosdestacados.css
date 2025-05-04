@@ -1,0 +1,146 @@
+.featured-services {
+    background: linear-gradient(135deg, #f8fafc 0%, #e6ecf5 100%);
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.highlight-bar {
+    width: 60px;
+    height: 5px;
+    background: #ffc107;
+    border-radius: 3px;
+}
+
+.ssc-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+@media (min-width: 768px) {
+    .ssc-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.recommendation-card {
+    background: #fff;
+    border-radius: 1.5rem;
+    box-shadow: 0 4px 24px rgba(44,62,80,0.08);
+    padding: 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: box-shadow 0.3s, transform 0.3s;
+    min-height: 100%;
+    position: relative;
+}
+
+.recommendation-card:hover {
+    box-shadow: 0 8px 32px rgba(44,62,80,0.16);
+    transform: translateY(-6px) scale(1.02);
+}
+
+.recommendation-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-bottom: 1.2rem;
+    font-size: 2.5rem;
+    background: #f5f7fa;
+}
+
+.recommendation-icon.express i {
+    color: #ffc107;
+}
+.recommendation-icon.lowcost i {
+    color: #198754;
+}
+.recommendation-icon.gastronomico i {
+    color: #0d6efd;
+}
+
+.recommendation-content h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #22223b;
+}
+
+.recommendation-content p {
+    color: #495057;
+}
+
+.recommendation-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1.5rem;
+}
+
+.recommendation-list li {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: #22223b;
+}
+
+.recommendation-list i {
+    color: #198754;
+    margin-right: 0.6em;
+    font-size: 1.1em;
+}
+
+.hero-buttons {
+    margin-bottom: 1rem;
+}
+
+.hero-button.primary {
+    background: primary;
+    color: #fff;
+    border-radius: 2rem;
+    padding: 0.5rem 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.2s;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.hero-button.primary:hover {
+    background: secondary;
+    color: #fff;
+}
+
+.recommendation-tip {
+    display: flex;
+    align-items: flex-start;
+    background: #f8f9fa;
+    border-radius: 1rem;
+    padding: 0.75rem 1rem;
+    margin-top: 1rem;
+    font-size: 0.95rem;
+    color: #6c757d;
+    box-shadow: 0 2px 8px rgba(44,62,80,0.04);
+    gap: 0.7em;
+}
+
+.recommendation-tip i {
+    color: #ffc107;
+    font-size: 1.3em;
+    margin-top: 0.1em;
+}
+
+@media (max-width: 767px) {
+    .recommendation-card {
+        padding: 1.2rem 0.5rem;
+    }
+    .featured-services {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+}

@@ -1,0 +1,46 @@
+
+.contact-section {
+    padding: 5rem 0;
+    background: linear-gradient(135deg, rgba(var(--primary-color-rgb), 0.97), rgba(var(--secondary-color-rgb), 0.97));
+}
+
+.contact-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 3rem;
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+}
+
+/* Mejoras para la tarjeta de contacto */
+
+.contact-card {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    border-radius: 15px;
+    padding: 3rem 2rem;
+    text-align: center;
+    color: white;
+    margin: 4rem auto;
+    max-width: 600px;
+}
+
+.contact-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: var(--accent-color);
+    color: var(--primary-color);
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    margin-top: 1.5rem;
+}
+
+.contact-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(255, 215, 0, 0.3);
+}

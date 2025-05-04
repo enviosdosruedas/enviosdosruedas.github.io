@@ -1,0 +1,110 @@
+.recomendacion-section {
+    background: linear-gradient(135deg, rgba(8,66,152,0.05), rgba(8,66,152,0.1));
+    border-radius: 15px;
+    margin: 2rem 0;
+    padding: 3rem 0;
+    position: relative;
+}
+.section-badge {
+    background-color: rgba(255,193,7,0.2);
+    color: #084298;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+.title-underline {
+    width: 80px;
+    height: 4px;
+    background: #ffc107;
+    margin: 1rem auto 0;
+}
+.recomendacion-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+.recomendacion-col {
+    flex: 1;
+    min-width: 300px;
+    max-width: 400px;
+    display: flex;
+}
+.recomendacion-card {
+    background: #fff;
+    transition: box-shadow 0.3s, transform 0.3s;
+    border-top: 4px solid #ffc107;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    border-radius: 12px;
+    padding: 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.recomendacion-card:hover {
+    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+    transform: translateY(-5px) scale(1.03);
+}
+.recomendacion-icon {
+    font-size: 2.5rem;
+    color: #ffc107;
+    background: rgba(255,193,7,0.1);
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 auto 1.5rem;
+    transition: all 0.4s;
+}
+.recomendacion-title {
+    color: #084298;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.recomendacion-list {
+    list-style: none;
+    padding-left: 0;
+    text-align: left;
+    margin-bottom: 0;
+}
+.recomendacion-list > li {
+    padding: 0.5rem 0;
+    font-size: 1rem;
+    color: #495057;
+    position: relative;
+    padding-left: 30px;
+}
+.recomendacion-list > li > i {
+    color: #ffc107;
+    position: absolute;
+    left: 0;
+    top: 10px;
+    font-size: 1.1rem;
+}
+.recomendacion-sublist {
+    padding-left: 25px;
+    margin-top: 0.5rem;
+}
+@media (max-width: 991px) {
+    .recomendacion-row {
+        flex-direction: column;
+        gap: 25px;
+    }
+    .recomendacion-col {
+        max-width: 100%;
+    }
+}
+@media (max-width: 480px) {
+    .recomendacion-card {
+        padding: 1.2rem 0.5rem;
+    }
+    .recomendacion-title {
+        font-size: 1.1rem;
+    }
+}

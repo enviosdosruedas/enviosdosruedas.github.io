@@ -1,0 +1,41 @@
+.emprendedores-bg {
+    background: linear-gradient(135deg, rgb(44, 82, 130), rgb(26, 54, 93));
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+.emprendedores-desc {
+    max-width: 800px;
+    font-size: 20px !important;
+    color: #fff !important;
+}
+.emprendedores-slider-img {
+    aspect-ratio: 24/9;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 50%;
+    width: 100%;
+    height: 200px;
+}
+.emprendedores-features {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    padding-bottom: 30px !important;
+}
+.emprendedores-why {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 2rem;
+}
+.text-accent {
+    color: #ffd700 !important;
+}
+@media (max-width: 991px) {
+    .emprendedores-features, .emprendedores-why {
+        grid-template-columns: 1fr;
+    }
+    .emprendedores-slider-img {
+        height: 120px;
+    }
+}

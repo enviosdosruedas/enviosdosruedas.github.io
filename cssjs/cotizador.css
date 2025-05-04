@@ -1,0 +1,71 @@
+/* Sección Cotizador */
+.cotizador-section {
+    background: linear-gradient(135deg, #f0f4f9, #dbe4f0);
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+.cotizador-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+@media (min-width: 768px) {
+    .cotizador-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2.5rem;
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+}
+
+.card-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+}
+
+.icon-lowcost i {
+    color: #084298 !important;
+}
+
+.icon-express i {
+    color: #ffc107 !important;
+}
+
+.icon-list {
+    font-size: 1.5rem !important;
+    vertical-align: middle;
+    margin-right: 0.5rem;
+}
+
+.feature-list {
+    padding-left: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.feature-card {
+    background: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 4px 16px rgba(44,62,80,0.07);
+    padding: 2rem 1.5rem;
+    transition: box-shadow 0.3s;
+}
+
+.feature-card:hover {
+    box-shadow: 0 8px 24px rgba(44,62,80,0.13);
+}
+
+@media (max-width: 575.98px) {
+    .feature-card {
+        padding: 1.2rem 0.5rem;
+    }
+    .cotizador-section {
+        padding: 1.5rem 0.5rem;
+    }
+}

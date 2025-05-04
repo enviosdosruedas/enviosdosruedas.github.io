@@ -1,0 +1,88 @@
+/* Banner Carrusel de Redes Sociales */
+.banner-carousel {
+    position: relative;
+    z-index: 1;
+    margin-top: 30px !important;
+    margin-bottom: 30px !important;
+}
+
+.social-banner {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.social-carousel {
+    background-color: #ffffff !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 15px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.social-item {
+    padding: 10px 20px;
+    margin: 0 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 6px;
+}
+
+.social-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.social-item a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+.social-item i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.social-item span {
+    font-size: 16px;
+}
+
+/* Estilos específicos para cada red social */
+.social-item.instagram {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}
+
+.social-item.facebook {
+    background-color: #3b5998;
+}
+
+.social-item.whatsapp {
+    background-color: #25d366;
+}
+
+/* Ocultar botones de navegación del carrusel */
+.banner-carousel .carousel-control-prev,
+.banner-carousel .carousel-control-next {
+    display: none;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .social-carousel {
+        flex-direction: column;
+    }
+    
+    .social-item {
+        width: 90%;
+        margin: 5px 0;
+        text-align: center;
+    }
+    
+    .social-item a {
+        justify-content: center;
+    }
+}
