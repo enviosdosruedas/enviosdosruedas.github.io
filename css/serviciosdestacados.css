@@ -5,48 +5,51 @@
 }
 
 .serviciosdestacados-title {
-    color: var(--primary-color);
+    color: var(--text-color-light); /* Título más claro */
     margin-bottom: var(--spacing-md);
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2); /* Sombra suave para el título */
 }
 
 .serviciosdestacados-highlight-bar {
     height: 4px;
     width: 80px;
-    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    background: linear-gradient(90deg, var(--accent-color-dark), var(--accent-color)); /* Acento más intenso */
     border-radius: var(--border-radius-sm);
     margin: var(--spacing-sm) auto var(--spacing-lg);
 }
 
 .serviciosdestacados-description {
-    color: var(--text-color-light);
+    color: rgba(255, 255, 255, 0.8); /* Descripción clara y semitransparente */
     max-width: 70%;
     margin: 0 auto var(--spacing-xl);
 }
 
 .serviciosdestacados-grid {
     display: grid;
-    grid-template-columns: 1fr; /* Una columna por defecto */
+    grid-template-columns: 1fr;
     gap: var(--spacing-lg);
 }
 
 .serviciosdestacados-card {
-    background-color: var(--background-color);
+    background-color: var(--primary-color); /* Fondo más oscuro para las tarjetas */
     border-radius: var(--border-radius);
-    box-shadow: var(--shadow-sm);
+    box-shadow: var(--shadow); /* Sombra sutil */
     transition: var(--transition);
     padding: var(--spacing-lg);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100%; /* Asegura que todas las tarjetas tengan la misma altura */
+    height: 100%;
+    border: 1px solid var(--primary-color-light); /* Borde sutil */
 }
 
 .serviciosdestacados-card:hover {
     transform: translateY(-5px);
-    box-shadow: var(--shadow);
+    box-shadow: var(--shadow-lg); /* Sombra más pronunciada al hacer hover */
 }
 
 .serviciosdestacados-icon {
+    background-color: var(--primary-color-dark); /* Fondo aún más oscuro para el ícono */
     border-radius: 50%;
     width: 70px;
     height: 70px;
@@ -57,27 +60,24 @@
 }
 
 .serviciosdestacados-icon.express {
-    background-color: rgba(255, 193, 7, 0.2); /* Tono suave del warning */
     color: var(--warning-color);
 }
 
 .serviciosdestacados-icon.lowcost {
-    background-color: rgba(40, 167, 69, 0.2); /* Tono suave del success */
     color: var(--success-color);
 }
 
 .serviciosdestacados-icon.gastronomico {
-    background-color: rgba(52, 152, 219, 0.2); /* Tono suave del secondary */
     color: var(--secondary-color);
 }
 
 .serviciosdestacados-content h3 {
-    color: var(--primary-color);
+    color: var(--accent-color); /* Acento para los títulos */
     margin-bottom: var(--spacing-sm);
 }
 
 .serviciosdestacados-content p {
-    color: var(--text-color-light);
+    color: rgba(255, 255, 255, 0.8); /* Texto claro para la descripción */
     margin-bottom: var(--spacing-md);
 }
 
@@ -88,7 +88,7 @@
 }
 
 .serviciosdestacados-list li {
-    color: var(--text-color);
+    color: var(--text-color-light); /* Texto claro para la lista */
     margin-bottom: var(--spacing-sm);
     display: flex;
     align-items: center;
@@ -96,7 +96,7 @@
 
 .serviciosdestacados-list li i {
     margin-right: var(--spacing-sm);
-    color: var(--secondary-color);
+    color: var(--secondary-color-light); /* Tono más claro del secundario */
 }
 
 .serviciosdestacados-buttons {
@@ -105,14 +105,14 @@
 }
 
 .serviciosdestacados-tip {
-    background-color: var(--background-color-alt);
+    background-color: var(--primary-color-light); /* Fondo más claro para la sugerencia */
     border-radius: var(--border-radius-sm);
     padding: var(--spacing-sm);
     margin-top: var(--spacing-md);
     display: flex;
     align-items: center;
     font-size: var(--font-size-sm);
-    color: var(--text-color);
+    color: rgba(255, 255, 255, 0.7); /* Texto claro para la sugerencia */
 }
 
 .serviciosdestacados-tip i {
