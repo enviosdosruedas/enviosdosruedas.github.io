@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="es">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            
+            <!-- Título y metadatos principales -->
+            <title>🚚 Mensajería Express en Mar del Plata | Envíos Urgentes y Delivery Rápido - Envios DosRuedas</title>
+            <meta name="description" content="Servicio de mensajería y delivery express en Mar del Plata. Entregas rápidas, seguras y económicas. ¡Cotizá tu envío ahora! Moto fija para empresas y particulares.">
+            <meta name="keywords" content="mensajería mar del plata, envios urgentes mdq, cadeteria moto, delivery express, moto fija empresas, precios envíos mdp, enviar paquetes mar del plata, mensajeria mar del plata, envios mar del plata, mensajería en moto mar del plata, motomensajeria, mdp, cadeteria mar del plata, servicio de mensajeria en moto">
+            <meta name="author" content="Envios DosRuedas">
+            <meta name="copyright" content="Envios DosRuedas">
+            <meta name="Language" content="es-ar">
+            <meta name="Distribution" content="Global">
+            <meta name="format-detection" content="telephone=no">
+            <meta name="theme-color" content="#4682B4">
+            <!-- SEO y robots -->
+            <meta name="robots" content="index,follow,max-image-preview:large">
+            <meta name="googlebot" content="index,follow">
+            <meta name="google-site-verification" content="9OjDGP-gnfVsatvfLEfTZjWdrynzlI03qJ9faKZddsc">
+            
+            <!-- Geolocalización -->
+            <meta name="geo.placename" content="Mar del Plata">
+            <meta name="geo.region" content="AR-B">
+            <meta name="geo.position" content="-38.0236;-57.5475">
+            <meta name="ICBM" content="-38.0236, -57.5475">
+            
+            <!-- Control de caché -->
+            <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
+            <meta http-equiv="Pragma" content="no-cache">
+            <meta http-equiv="Expires" content="0">
+            <meta http-equiv="Last-Modified" content="0">
+            
+            <!-- Twitter Card -->
+            <meta name="twitter:card" content="summary">
+            <meta name="twitter:site" content="@">
+            <meta name="twitter:creator" content="@">
+            <meta name="twitter:title" content="🚚 Mensajería Express en Mar del Plata | Envíos Urgentes y Delivery Rápido - Envios DosRuedas">
+            <meta name="twitter:description" content="Servicio de mensajería y delivery express en Mar del Plata. Entregas rápidas, seguras y económicas. ¡Cotizá tu envío ahora! Moto fija para empresas y particulares.">
+            <meta name="twitter:image" content="https://ss-static-001.esmsv.com/r/content/host1/4737689b928ca57a9983842e16eab90a/img/LogoEnviosDosRuedas.webp">
+            
+            <!-- Open Graph -->
+            <meta property="og:title" content="🚚 Mensajería Express en Mar del Plata | Envíos Urgentes y Delivery Rápido - Envios DosRuedas">
+            <meta property="og:type" content="website">
+            <meta property="og:url" content="https://enviosdosruedas.com/delivery-envios-mensajeria-mdp">
+            <meta property="og:image" content="https://ss-static-001.esmsv.com/r/content/host1/4737689b928ca57a9983842e16eab90a/img/LogoEnviosDosRuedas.webp">
+            <meta property="og:image:width" content="500">
+            <meta property="og:image:height" content="500">
+            <meta property="og:description" content="Servicio de mensajería y delivery express en Mar del Plata. Entregas rápidas, seguras y económicas. ¡Cotizá tu envío ahora! Moto fija para empresas y particulares.">
+            <meta property="og:site_name" content="Envios DosRuedas">
+            
+            <!-- Favicon -->
+            <link rel="icon" href="https://ss-static-001.esmsv.com/r/content/host1/4737689b928ca57a9983842e16eab90a/favicon/LogoEnviosDosRuedas-(4602)-32.png" sizes="32x32">
+            <link rel="icon" href="https://ss-static-001.esmsv.com/r/content/host1/4737689b928ca57a9983842e16eab90a/favicon/LogoEnviosDosRuedas-(4602)-57.png" sizes="57x57">
+            <link rel="icon" href="https://ss-static-001.esmsv.com/r/content/host1/4737689b928ca57a9983842e16eab90a/favicon/LogoEnviosDosRuedas-(4602)-76.png" sizes="76x76">
+            <link rel="icon" href="https://ss-static-001.esmsv.com/r/content/host1/4737689b928ca57a9983842e16eab90a/favicon/LogoEnviosDosRuedas-(4602)-96.png" sizes="96x96">
+            <link rel="icon" href="https://ss-static-001.esmsv.com/r/content/host1/4737689b928ca57a9983842e16eab90a/favicon/LogoEnviosDosRuedas-(4602)-128.png" sizes="128x128">
+            <link rel="icon" href="https://ss-static-001.esmsv.com/r/content/host1/4737689b928ca57a9983842e16eab90a/favicon/LogoEnviosDosRuedas-(4602)-192.png" sizes="192x192">
+            <link rel="icon" href="https://ss-static-001.esmsv.com/r/content/host1/4737689b928ca57a9983842e16eab90a/favicon/LogoEnviosDosRuedas-(4602)-228.png" sizes="228x228">
+            
+            <!-- Android -->
+            <link rel="shortcut icon" href="https://ss-static-001.esmsv.com/r/content/host1/4737689b928ca57a9983842e16eab90a/favicon/LogoEnviosDosRuedas-(4602)-196.png" sizes="196x196">
+            
+            <!-- iOS -->
+            <link rel="apple-touch-icon" href="https://ss-static-001.esmsv.com/r/content/host1/4737689b928ca57a9983842e16eab90a/favicon/LogoEnviosDosRuedas-(4602)-120.png" sizes="120x120">
+            <link rel="apple-touch-icon" href="https://ss-static-001.esmsv.com/r/content/host1/4737689b928ca57a9983842e16eab90a/favicon/LogoEnviosDosRuedas-(4602)-152.png" sizes="152x152">
+            <link rel="apple-touch-icon" href="https://ss-static-001.esmsv.com/r/content/host1/4737689b928ca57a9983842e16eab90a/favicon/LogoEnviosDosRuedas-(4602)-180.png" sizes="180x180">
+            
+            <!-- Windows 8 IE 10 -->
+            <meta name="msapplication-TileColor" content="#FFFFFF">
+            <meta name="msapplication-TileImage" content="https://ss-static-001.esmsv.com/r/content/host1/4737689b928ca57a9983842e16eab90a/favicon/LogoEnviosDosRuedas-(4602)-144.png">
+            
+            <!-- Datos Estructurados (Schema.org) -->
+            <script type="application/ld+json">
+                {
+                    "@context": "https://schema.org",
+                    "@type": "ProfessionalService",
+                    "name": "Envios DosRuedas",
+                    "image": "https://ss-static-001.esmsv.com/r/content/host1/4737689b928ca57a9983842e16eab90a/img/LogoEnviosDosRuedas.webp",
+                    "description": "Servicio express de mensajería y delivery en Mar del Plata. Entregas rápidas con seguimiento, moto fija para negocios y soluciones logísticas personalizadas.",
+                    "@id": "https://enviosdosruedas.com",
+                    "url": "https://enviosdosruedas.com",
+                    "telephone": "+542236602699",
+                    "priceRange": "desde $2000",
+                    "address": {
+                        "@type": "PostalAddress",
+                        "streetAddress": "11 de Septiembre 3687",
+                        "addressLocality": "Mar del Plata",
+                        "addressRegion": "Buenos Aires",
+                        "postalCode": "B7600",
+                        "addressCountry": "AR"
+                    },
+                    "geo": {
+                        "@type": "GeoCoordinates",
+                        "latitude": -38.0236,
+                        "longitude": -57.5475
+                    },
+                    "openingHoursSpecification": {
+                        "@type": "OpeningHoursSpecification",
+                        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+                        "opens": "08:00",
+                        "closes": "19:00"
+                    },
+                    "sameAs": [
+                        "https://www.facebook.com/enviosdosruedas/",
+                        "https://www.instagram.com/enviosdosruedas/",
+                        "https://enviosdosruedas.com/"
+                    ],
+                    "aggregateRating": {
+                        "@type": "AggregateRating",
+                        "ratingValue": "4.9",
+                        "reviewCount": "150"
+                    }
+                }
+            </script>
+            
+            <!-- Hojas de estilo -->
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+        <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+            <link rel="stylesheet" href="./cssjs/style.css">
+            <link rel="stylesheet" href="./cssjs/navbar.css">
+            <link rel="stylesheet" href="./cssjs/hero.css">
+            <link rel="stylesheet" href="./cssjs/section.css">
+            <link rel="stylesheet" href="./cssjs/footer.css">
+            <link rel="stylesheet" href="./cssjs/contacto.css">
+            <link rel="stylesheet" href="./cssjs/quienesomos.css">
+            <link rel="stylesheet" href="./cssjs/bannercarrusel.css">
+            
+         
+            <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag() {
+                    dataLayer.push(arguments);
+                }
+                gtag('js', new Date());
+                gtag('config', 'G-K445BEETCF');
+            </script>
+            
+            
+        </head>
+
+<body>
+  
+    <!-- ======= Main ======= -->
+    <main id="customPageContent" style="margin-top:0px;">
+        <section id="" class="sitePage">
+            <div class="container-fluid p-0">
+                <nav class="main-nav" style="position: relative; z-index: 10;">
+                    <div class="nav-container">
+                        <div class="nav-logo"> <a href="/delivery-envios-mensajeria-mdp"></a> <a
+                                class="ss-image-link d-inline-block" data-ss-url-form="pages"
+                                href="/delivery-envios-mensajeria-mdp" data-ss-url-form-id="9"
+                                style="max-width: 60px !important; max-height: 60px !important;"><img
+                                    src="https://ss-static-001.esmsv.com/r/content/host1/4737689b928ca57a9983842e16eab90a//img/LogoEnviosDosRuedas.webp"
+                                    alt="Envios DosRuedas Logo"> </a>
+                            <div class="logo-text">
+                                <h1 style="color: rgb(255, 193, 7) !important;">Envios DosRuedas </h1>
+                                <p>Tu Solución Confiable para Envíos </p>
+                            </div>
+                        </div>
+                        <div class="nav-menu">
+                            <ul data-ss-fontsize="{&quot;desktop&quot;:&quot;20px&quot;}"
+                                style="font-size: 20px !important;">
+                                <li> <a data-ss-url-form="pages" href="/delivery-envios-mensajeria-mdp"
+                                        data-ss-url-form-id="9" style="color: rgb(255, 193, 7) !important;"> <i
+                                            class="fas fa-home"></i> Inicio </a> </li>
+                                <li class="dropdown"> <a href="#" style="color: rgb(255, 193, 7) !important;"> <i
+                                            class="fas fa-truck-fast"></i> Servicios </a>
+                                    <div class="dropdown-content"> <a data-ss-url-form="pages"
+                                            href="/mensajeria-envios-express" data-ss-url-form-id="35">Envíos Express </a>
+                                        <a data-ss-url-form="pages" href="/mensajeria-envios-lowcost"
+                                            data-ss-url-form-id="36">Envíos LowCost </a> <a data-ss-url-form="pages"
+                                            href="/delivery-moto-express" data-ss-url-form-id="34">Moto Express </a> <a
+                                            data-ss-url-form="pages" href="/delivery-moto-fija"
+                                            data-ss-url-form-id="33">Moto Fija </a> <a data-ss-url-form="pages"
+                                            href="/envios-emprendedores" data-ss-url-form-id="73">Plan Emprendedores </a>
+                                    </div>
+                                </li>
+                                <li class="dropdown"> <a href="#" style="color: rgb(255, 193, 7) !important;"> <i
+                                            class="fas fa-calculator"></i> Cotizar </a>
+                                    <div class="dropdown-content"> <a data-ss-url-form="pages"
+                                            href="/cotizador-envios-express" data-ss-url-form-id="40">Cotizar Express </a>
+                                        <a data-ss-url-form="pages" href="/cotizador-envios-lowcost"
+                                            data-ss-url-form-id="41">Cotizar LowCost </a> </div>
+                                </li>
+                                <li class="dropdown"> <a href="#" style="color: rgb(255, 193, 7) !important;"> <i
+                                            class="fas fa-users"></i> &nbsp;Nosotros </a>
+                                    <div class="dropdown-content"> <a data-ss-url-form="pages" href="/sobre-nosotros"
+                                            data-ss-url-form-id="42">Sobre Nosotros </a> <a data-ss-url-form="pages"
+                                            href="/preguntasfrecuentes" data-ss-url-form-id="37">Preguntas Frecuentes </a>
+                                        <a data-ss-url-form="pages" href="/nuestrasredes" data-ss-url-form-id="38">Nuestras
+                                            Redes </a><a data-ss-url-form="pages" href="/preguntasfrecuentes"
+                                            data-ss-url-form-id="37">Noticias</a> </div>
+                                </li>
+                                <li> <a data-ss-url-form="pages" href="/contacto" data-ss-url-form-id="5"
+                                        style="color: rgb(255, 193, 7) !important;"> <i class="fas fa-envelope"></i>
+                                        Contacto </a> </li>
+                            </ul>
+                        </div> <button class="mobile-nav-toggle" aria-label="Toggle Navigation"> <i class="fas fa-bars"></i>
+                        </button>
+                    </div>
+                </nav>
+                <section id="banner-principal" class="hero">
+                    <div class="hero-content">
+                        <div class="hero-grid">
+                            <div class="hero-text" style="margin-bottom: 40px !important;"> <span
+                                    class="hero-badge shine-effect" style="color: rgb(255, 215, 0) !important;"> <i
+                                        class="fas fa-star fa-solid" style="font-size: 30px !important;"></i> Tu Solución
+                                    Confiable para Envíos </span>
+                                <h1 class="hero-title" style="color: rgb(255, 215, 0) !important;">Envios DosRuedas </h1>
+                                <p class="hero-description">Somos tu solución confiable en servicios de mensajería y
+                                    delivery en Mar del Plata. Ofrecemos soluciones rápidas, seguras y económicas para todas
+                                    tus necesidades de envío. </p>
+                                <div class="hero-buttons"> <a class="hero-button primary" data-ss-url-form="pages"
+                                        href="/cotizador-envios-express" data-ss-url-form-id="40"
+                                        data-ss-fontsize="{&quot;desktop&quot;:&quot;20px&quot;}"
+                                        style="font-size: 20px !important; color: rgb(8, 66, 152) !important; background-color: rgb(255, 215, 0) !important;">
+                                        Cotiza tu Envío <i class="fas fa-arrow-right" style=""></i> </a> <a
+                                        class="hero-button secondary" data-ss-url-form="pages" href="/contacto"
+                                        data-ss-url-form-id="5" data-ss-fontsize="{&quot;desktop&quot;:&quot;20px&quot;}"
+                                        style="font-size: 20px !important; color: rgb(255, 215, 0) !important;"> Contacto <i
+                                            class="fas fa-envelope" style=""></i> </a> </div>
+                            </div>
+                            <div class="hero-image" style="width: auto !important; height: fit-content !important;"> <img
+                                    src="https://ss-static-001.esmsv.com/r/content/host1/4737689b928ca57a9983842e16eab90a//img/LogoEnviosDosRuedas.webp"
+                                    alt="Envios DosRuedas Logo" class="logo-image" width="200" height="100" style=""> </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="vision-global py-5" style="margin-top: 0px !important; margin-bottom: 0px !important;">
+                    <div class="container">
+                        <div class="text-center">
+                            <h2 class="mb-4 font-bold text-3xl text-warning">Nuestra Visión Global </h2>
+                            <div class="mx-auto highlight-bar mt-2"></div>
+                        </div>
+                        <p class="mx-auto lead mb-5 text-white" style="max-width: 800px; text-align: center;">Datos que
+                            respaldan nuestra calidad y compromiso. ¡Descubre por qué somos la solución confiable para tus
+                            envíos! </p>
+                        <div class="ssc-grid"
+                            style="grid-template-columns: repeat(3, 1fr); gap: 15px !important; font-size: 20px !important;"
+                            data-ss-fontsize="{&quot;desktop&quot;:&quot;20px&quot;}">
+                            <div class="h-100 p-4 vision-card animate">
+                                <div class="mb-3 text-center"> <i class="fab fa-google"
+                                        style="font-size: 2.5rem; color: var(--accent-color) !important;"></i> </div>
+                                <h3 class="mb-2 font-bold text-4xl text-warning text-center">4.9</h3>
+                                <p class="mb-0 text-white text-xl text-center">Calificación en Google </p>
+                                <p class="mb-0 text-white text-xl text-center"> ⭐ ⭐ ⭐ ⭐ ⭐ </p>
+                            </div>
+                            <div class="h-100 p-4 vision-card animate">
+                                <div class="mb-3 text-center"> <i class="fas fa-motorcycle fa-solid"
+                                        style="font-size: 2.5rem; color: var(--accent-color) !important;"></i> </div>
+                                <h3 class="mb-2 font-bold text-4xl text-warning text-center">+1000 </h3>
+                                <p class="mb-0 text-white text-xl text-center">Envios Mensuales </p>
+                            </div>
+                            <div class="h-100 p-4 vision-card animate">
+                                <div class="mb-3 text-center"> <i class="fas fa-alarm-exclamation fa-solid"
+                                        style="font-size: 2.5rem; color: var(--accent-color) !important;"></i> </div>
+                                <h3 class="mb-2 font-bold text-4xl text-warning text-center">Horario </h3>
+                                <p class="mb-0 text-white text-xl text-center">Lunes a Viernes <br> 09.00 a 18.00 <br>
+                                    Sábados <br> 09.00 a 15 </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="my-4 py-5 featured-services"
+                    style="background: linear-gradient(135deg, rgb(240, 244, 249), rgb(219, 228, 240)); margin-top: 0px !important; margin-bottom: 0px !important;">
+                    <div class="container" bis_skin_checked="1">
+                        <div class="text-center mb-5" bis_skin_checked="1">
+                            <h2 class="fw-bold display-4 text-primary">Calcula el Precio de tu Envío </h2>
+                            <p class="text-muted lead mb-5">Calculá el costo de tu envío de forma rápida y sencilla. ¡Elige
+                                el servicio que más se adapte a tus necesidades! </p>
+                        </div>
+                        <div class="ssc-grid ssc-justify-items-start ssc-align-start"
+                            style="grid-template-columns: repeat(2, 1fr); gap: 40px !important; padding-left: 40px !important; padding-right: 40px !important;">
+                            <div class="feature-card hover-effect animate">
+                                <div class="card-icon" style="color: rgb(8, 66, 152) !important;"> <i
+                                        class="fas text-success fa-3x fa-piggy-bank"
+                                        style="font-size: 40px !important;"></i> </div>
+                                <h3>Cotizador Envíos LowCost </h3>
+                                <p class="mb-4">Servicio económico con entregas entre 10:00 y 19:00. Ideal para envíos que
+                                    no requieren horario específico. </p>
+                                <ul class="feature-list" style="padding-left: 30px !important;">
+                                    <li> <i class="fas fa-circle-dollar fa-solid" style="font-size: 30px !important;"></i>
+                                        &nbsp;Precio económico </li>
+                                    <li> <i class="fas fa-person-carry-box fa-solid"
+                                            style="font-size: 30px !important;"></i> &nbsp;Entrega garantizada </li>
+                                    <li> <i class="fas fa-calendar-check fa-solid" style="font-size: 30px !important;"></i>
+                                        &nbsp;Mismo día disponible </li>
+                                </ul>
+                                <div class="ssc-flex ssc-flex-row ssc-flex-wrap ssc-justify-center ssc-align-center">
+                                    <div class="hero-buttons"> <a class="hero-button primary" data-ss-url-form="pages"
+                                            href="/cotizador-envios-lowcost" data-ss-url-form-id="41"
+                                            style="color: rgb(255, 255, 255) !important;"> Cotiza tu Envío <i
+                                                class="fas fa-square-dollar fa-solid"
+                                                style="font-size: 30px !important;"></i> </a> </div>
+                                </div>
+                            </div>
+                            <div class="feature-card hover-effect animate">
+                                <div class="card-icon" style="color: rgb(8, 66, 152) !important;"> <i
+                                        class="fas fa-3x text-warning fa-bolt"
+                                        style="font-size: 40px !important; color: rgb(8, 66, 152) !important;"></i> </div>
+                                <h3>Cotizador Envíos Express </h3>
+                                <p class="mb-4">Entregas garantizadas el mismo día para pedidos antes de las 15:00. </p>
+                                <ul class="feature-list" style="padding-left: 30px !important;">
+                                    <li> <i class="fas fa-person-carry-box fa-solid"
+                                            style="font-size: 30px !important;"></i> &nbsp;Entrega mismo día </li>
+                                    <li> <i class="fas fa-truck-clock fa-solid" style="font-size: 28px !important;"></i>
+                                        &nbsp;Rango horario a elección </li>
+                                    <li> <i class="fas fa-award fa-solid" style="font-size: 30px !important;"></i>
+                                        &nbsp;Servicio prioritario </li>
+                                </ul>
+                                <div class="ssc-flex ssc-flex-row ssc-flex-wrap ssc-justify-center ssc-align-center">
+                                    <div class="hero-buttons" style="color: rgb(8, 66, 152) !important;"> <a
+                                            class="hero-button primary" data-ss-url-form="pages"
+                                            href="/es-ar/cotizador-envios-express" data-ss-url-form-id="40"
+                                            style="color: rgb(255, 255, 255) !important;"> Cotiza tu Envío <i
+                                                class="fas fa-square-dollar fa-solid"
+                                                style="font-size: 30px !important;"></i> </a> </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center mt-5 ss-desktop-none ss-mobile-none ss-tablet-none" bis_skin_checked="1">
+                            <p class="mb-4 h5">¡Comunícate con nosotros! </p> <a
+                                href="https://wa.me/+542236602699?text=Hola!%20Encontre%20su%20contacto%20en%20el%20sitio%20web%20y%20me%20gustaria%20mas%20informacion%20sobre%20su%20servicio."
+                                class="btn btn-lg btn-success" bis_skin_checked="1"> <i class="me-2 fa-whatsapp fab"></i>
+                                WhatsApp: 2236602699 </a>
+                        </div>
+                    </div>
+                </section>
+                <section class="text-white entrepreneurs my-4 py-5 rounded-4"
+                    style="background: linear-gradient(135deg, rgb(44, 82, 130), rgb(26, 54, 93)); margin-top: 0px !important; margin-bottom: 0px !important;">
+                    <div class="container">
+                        <div class="text-center mb-5">
+                            <h2 class="fw-bold display-4 mb-3 text-warning">Soluciones Especiales para Emprendedores </h2>
+                            <p class="mx-auto lead text-white-50"
+                                style="max-width: 800px; font-size: 20px !important; color: rgb(255, 255, 255) !important;"
+                                data-ss-fontsize="{&quot;desktop&quot;:&quot;20px&quot;}">Apoyamos a emprendedores con
+                                soluciones de mensajería y delivery confiables, rápidas y económicas. Optimiza tu logística
+                                y dedica más tiempo a hacer crecer tu negocio. </p>
+                        </div>
+                        <div class="component-slider-ss" data-design="slider-gallery"
+                            data-settings="{&quot;cardsQuantity&quot;:1,&quot;transition&quot;:true,&quot;transitionEffect&quot;:&quot;animate__default&quot;,&quot;transitionPause&quot;:true,&quot;showControls&quot;:false,&quot;showNav&quot;:false,&quot;autoplay&quot;:true,&quot;autoplayTimeout&quot;:4000,&quot;speed&quot;:1000,&quot;autoHeight&quot;:true,&quot;positionNav&quot;:5,&quot;locationNav&quot;:&quot;outside&quot;}"
+                            style="padding-top: 20px !important;">
+                            <div class="slider-ss">
+                                <ul class="control" id="custom-control">
+                                    <li class="prev"> <i class="fas fa-xl fa-angle-left"></i> </li>
+                                    <li class="next"> <i class="fas fa-xl fa-angle-right"></i> </li>
+                                </ul>
+                                <div class="slider-slider-gallery" data-design="slider-gallery">
+                                    <div class="item-ss" style="background-position: 50% 50%;" id="0">
+                                        <div class="ssc-align-center ssc-flex ssc-flex-column ssc-flex-wrap ssc-justify-center"
+                                            style="aspect-ratio:24/9;background-image:url(https://ss-static-001.esmsv.com/r/content/host1/4737689b928ca57a9983842e16eab90a//editor/Emprendedoresbannerrapidas3.webp)!important;background-repeat:no-repeat;background-size:contain;background-position:50% 50%">
+                                        </div>
+                                    </div>
+                                    <div class="item-ss" style="" id="1">
+                                        <div class="ssc-align-center ssc-flex ssc-flex-column ssc-flex-wrap ssc-justify-center"
+                                            style="aspect-ratio:24/9;background-image:url(https://ss-static-001.esmsv.com/r/content/host1/4737689b928ca57a9983842e16eab90a//editor/Emprendedoresbannerrapidas2.webp)!important;background-repeat:no-repeat;background-size:contain;background-position:50% 50%">
+                                        </div>
+                                    </div>
+                                    <div class="item-ss" style="" id="2">
+                                        <div class="ssc-align-center ssc-flex ssc-flex-column ssc-flex-wrap ssc-justify-center"
+                                            style="aspect-ratio:24/9;background-image:url(https://ss-static-001.esmsv.com/r/content/host1/4737689b928ca57a9983842e16eab90a//editor/Emprendedoresbannerrapidas.webp)!important;background-repeat:no-repeat;background-size:contain;background-position:50% 50%">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ssc-row gy-4"
+                            style="display:grid;gap:1rem;grid-template-columns:33.33fr 33.33fr 33.33fr;padding-bottom:30px!important">
+                            <div
+                                class="text-center bg-white hover-lift bg-opacity-10 feature-card h-100 p-4 rounded-4 ssc-col">
+                                <i class="fas fa-3x text-warning mb-3 fa-box-circle-check fa-solid"></i>
+                                <h3 class="fw-bold h4" style="color: rgb(255, 255, 255) !important;">Logística confiable
+                                </h3>
+                                <p class="mb-0 text-white-50" style="color: rgb(255, 215, 0) !important;">Soluciones
+                                    adaptadas a tus necesidades </p>
+                            </div>
+                            <div
+                                class="text-center bg-white hover-lift bg-opacity-10 feature-card h-100 p-4 rounded-4 ssc-col">
+                                <i class="fas fa-3x text-warning mb-3 fa-bolt"></i>
+                                <h3 class="fw-bold h4" style="color: rgb(255, 255, 255) !important;">Entrega rápida </h3>
+                                <p class="mb-0 text-white-50" style="color: rgb(255, 215, 0) !important;">Optimiza tus
+                                    tiempos de entrega </p>
+                            </div>
+                            <div
+                                class="text-center bg-white hover-lift bg-opacity-10 feature-card h-100 p-4 rounded-4 ssc-col">
+                                <i class="fas fa-3x text-warning mb-3 fa-hand-holding-dollar"></i>
+                                <h3 class="fw-bold h4" style="color: rgb(255, 255, 255) !important;">Precios accesibles
+                                </h3>
+                                <p class="mb-0 text-white-50" style="color: rgb(255, 215, 0) !important;">Tarifas
+                                    competitivas para tu negocio </p>
+                            </div>
+                        </div>
+                        <div class="align-items-center ssc-row" style="grid-template-columns: 50fr 50fr;">
+                            <div class="mb-4 mb-lg-0 ssc-col">
+                                <h2 class="mb-4 display-6 fw-bold" style="color: rgb(255, 215, 0) !important;">¿Por qué
+                                    elegirnos? </h2>
+                                <p class="mb-4 lead">En Mar del Plata, entendemos las necesidades únicas de los
+                                    emprendedores. Nuestro equipo se dedica a garantizar que cada paquete llegue a tiempo,
+                                    en perfectas condiciones y con costos que se ajusten a tu presupuesto. </p>
+                                <div class="d-flex gap-3"> <a class="hero-button primary" data-ss-url-form="pages"
+                                        href="/preguntasfrecuentes" data-ss-url-form-id="37"
+                                        style="color: rgb(255, 255, 255) !important; font-size: 20px;"
+                                        data-ss-fontsize="{&quot;desktop&quot;:&quot;20px&quot;}">Mas Información&nbsp; <i
+                                            class="fas fa-circle-info fa-solid" style="font-size: 30px !important;"></i>
+                                    </a> <a class="hero-button secondary" data-ss-url-form="pages" href="/contacto"
+                                        data-ss-url-form-id="5" style="color: rgb(255, 215, 0) !important; font-size: 20px;"
+                                        data-ss-fontsize="{&quot;desktop&quot;:&quot;20px&quot;}"> Contacto <i
+                                            class="fas fa-envelope" style="font-size: 30px !important;"></i> </a> </div>
+                            </div>
+                            <div class="ssc-col"><img alt="Por qué elegirnos"
+                                    src="https://ss-static-001.esmsv.com/r/content/host1/4737689b928ca57a9983842e16eab90a//editor/Emprendedoresbanner.webp"
+                                    class="img-fluid rounded-4 shadow"> </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="my-4 py-5 featured-services"
+                    style="background: linear-gradient(135deg, rgb(240, 244, 249), rgb(219, 228, 240)); margin-top: 0px !important; margin-bottom: 0px !important;">
+                    <div class="container" bis_skin_checked="1">
+                        <div class="text-center mb-5" bis_skin_checked="1">
+                            <h2 class="fw-bold display-4 text-primary">Nuestros Servicios Destacados <div
+                                    class="mx-auto highlight-bar mt-2" bis_skin_checked="1"></div>
+                            </h2>
+                            <p class="text-muted lead mb-5">Brindamos soluciones profesionales adaptadas a tus necesidades.
+                                ¡Vos encárgate de vender, nosotros hacemos el envío! </p>
+                        </div>
+                        <div class="ssc-grid" style="grid-template-columns: repeat(3, 1fr); gap: 30px !important;">
+                            <article class="recommendation-card hover-effect">
+                                <div class="recommendation-icon" style="color: rgb(116, 42, 42) !important;"> <i
+                                        class="fas fa-3x text-warning fa-bolt fa-regular"
+                                        style="font-size: 40px !important; color: rgb(110, 43, 43) !important;"></i> </div>
+                                <div class="recommendation-content">
+                                    <h3>Envíos Express </h3>
+                                    <p class="mb-4">Entregas garantizadas el mismo día para pedidos antes de las 15:00. <br>
+                                        <br> </p>
+                                    <ul class="recommendation-list">
+                                        <li> <i class="fas fa-check"></i> &nbsp;Entrega mismo día </li>
+                                        <li> <i class="fas fa-check"></i> &nbsp;Rango horario a elección </li>
+                                        <li> <i class="fas fa-check"></i> Servicio prioritario </li>
+                                    </ul>
+                                    <div class="hero-buttons"
+                                        style="margin-left: 0px !important; margin-right: 0px !important;"> <a
+                                            class="hero-button primary" data-ss-url-form="pages"
+                                            href="/es-ar/mensajeria-envios-express" data-ss-url-form-id="35"
+                                            style="color: rgb(255, 255, 255) !important; font-size: 20px;"
+                                            data-ss-fontsize="{&quot;desktop&quot;:&quot;20px&quot;}">Informacion <br> <i
+                                                class="fas fa-circle-question fa-solid"
+                                                style="font-size: 30px !important;"></i> </a> </div>
+                                    <div class="recommendation-tip ss-desktop-none ss-tablet-none ss-mobile-none"> <i
+                                            class="fas fa-lightbulb" style="font-size: 40px !important;"></i>
+                                        <p>Un embalaje adecuado asegura la integridad de tus productos durante el envío.
+                                        </p>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="recommendation-card hover-effect">
+                                <div class="recommendation-icon"
+                                    style="margin-left: 40px !important; margin-right: 40px !important;"> <i
+                                        class="fas text-success fa-3x fa-piggy-bank"
+                                        style="font-size: 40px !important;"></i> </div>
+                                <div class="recommendation-content">
+                                    <h3>Envíos LowCost </h3>
+                                    <p class="mb-4">Servicio económico con entregas entre 10:00 y 19:00. Ideal para envíos
+                                        que no requieren horario específico. </p>
+                                    <ul class="recommendation-list">
+                                        <li> <i class="fas fa-check"></i> &nbsp;Precio económico </li>
+                                        <li> <i class="fas fa-check"></i> &nbsp;Entrega garantizada </li>
+                                        <li> <i class="fas fa-check"></i> Mismo día disponible </li>
+                                    </ul>
+                                    <div class="hero-buttons"
+                                        style="margin-left: 20px !important; margin-right: 20px !important;"> <a
+                                            class="hero-button primary" data-ss-url-form="pages"
+                                            href="/cotizador-envios-lowcost" data-ss-url-form-id="41"
+                                            style="color: rgb(255, 255, 255) !important; font-size: 20px;"
+                                            data-ss-fontsize="{&quot;desktop&quot;:&quot;20px&quot;}">Informacion <br> <i
+                                                class="fas fa-circle-question fa-solid"
+                                                style="font-size: 30px !important;"></i> </a> </div>
+                                    <div class="recommendation-tip ss-desktop-none ss-tablet-none ss-mobile-none"> <i
+                                            class="fas fa-lightbulb" style="font-size: 40px !important;"></i>
+                                        <p>Un embalaje adecuado asegura la integridad de tus productos durante el envío.
+                                        </p>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="recommendation-card hover-effect">
+                                <div class="recommendation-icon"> <i class="fas fa-3x fa-motorcycle text-primary"
+                                        style="font-size: 40px !important;"></i> </div>
+                                <div class="recommendation-content">
+                                    <h3>Delivery Gastronómico </h3>
+                                    <p class="mb-4">Soluciones exclusivas para tu comercio con repartidores disponibles
+                                        cuando los necesites. Incluye seguro y cobertura completa. </p>
+                                    <ul class="recommendation-list">
+                                        <li> <i class="fas fa-check"></i> &nbsp;Disponibilidad garantizada </li>
+                                        <li> <i class="fas fa-check"></i> &nbsp;Seguro incluido </li>
+                                        <li> <i class="fas fa-check"></i> &nbsp;Servicio profesional </li>
+                                    </ul>
+                                    <div class="hero-buttons"
+                                        style="margin-left: 20px !important; margin-right: 20px !important;"> <a
+                                            class="hero-button primary" data-ss-url-form="pages"
+                                            href="/es-ar/envios-emprendedores" data-ss-url-form-id="73"
+                                            style="color: rgb(255, 255, 255) !important; font-size: 20px;"
+                                            data-ss-fontsize="{&quot;desktop&quot;:&quot;20px&quot;}">Informacion <br> <i
+                                                class="fas fa-circle-question fa-solid"
+                                                style="font-size: 30px !important;"></i> </a> </div>
+                                    <div class="recommendation-tip ss-desktop-none ss-tablet-none ss-mobile-none"> <i
+                                            class="fas fa-lightbulb" style="font-size: 40px !important;"></i>
+                                        <p>Cumple con los límites establecidos para asegurar un transporte seguro y
+                                            eficiente. </p>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="text-center mt-5 ss-desktop-none ss-mobile-none ss-tablet-none" bis_skin_checked="1">
+                            <p class="mb-4 h5">¡Comunícate con nosotros! </p> <a
+                                href="https://wa.me/+542236602699?text=Hola!%20Encontre%20su%20contacto%20en%20el%20sitio%20web%20y%20me%20gustaria%20mas%20informacion%20sobre%20su%20servicio."
+                                class="btn btn-lg btn-success" bis_skin_checked="1"> <i class="me-2 fa-whatsapp fab"></i>
+                                WhatsApp: 2236602699 </a>
+                        </div>
+                    </div>
+                </section>
+                <div id="bannerCarousel" class="carousel slide banner-carousel" data-bs-ride="carousel"
+                    style="position: relative; z-index: 1; margin-top: 30px !important; margin-bottom: 30px !important;">
+                    <div class="social-banner" style="margin: 0px !important; padding: 0px !important;">
+                        <div class="social-carousel" style="background-color: rgb(255, 255, 255) !important;">
+                            <div class="social-item instagram"> <a href="https://www.instagram.com/enviosdosruedas/"
+                                    target="_blank"> <i class="fab fa-instagram"></i> <span>¡Síguenos en Instagram! </span>
+                                </a> </div>
+                            <div class="social-item facebook"> <a href="https://www.facebook.com/enviosdosruedas"
+                                    target="_blank"> <i class="fab fa-facebook"></i> <span>¡Visítanos en Facebook! </span>
+                                </a> </div>
+                            <div class="social-item whatsapp"> <a
+                                    href="https://wa.me/+542236602699?text=%C2%A1Hola%21%20%F0%9F%91%8B%20Encontr%C3%A9%20su%20contacto%20en%20el%20sitio%20web%20y%20quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20servicios%20de%20mensajer%C3%ADa%20%F0%9F%93%A6%20y%20delivery%20%F0%9F%9B%B5.%20%C2%A1Gracias%21"
+                                    target="_blank"> <i class="fab fa-whatsapp"></i> <span>WhatsApp: 2236602699 </span> </a>
+                            </div>
+                        </div>
+                    </div> <button class="carousel-control-prev" type="button" data-bs-target="#bannerCarousel"
+                        data-bs-slide="prev" style="display: none;"> <span class="carousel-control-prev-icon"
+                            aria-hidden="true"></span> <span class="visually-hidden">Previous </span> </button> <button
+                        class="carousel-control-next" type="button" data-bs-target="#bannerCarousel" data-bs-slide="next"
+                        style="display: none;"> <span class="carousel-control-next-icon" aria-hidden="true"></span> <span
+                            class="visually-hidden">Next </span> </button>
+                </div>
+            </div>
+        </section>
+    
+    </main>
+   
+    <button id="backToTop" class="back-to-top" aria-label="Volver arriba" data-ss-id="iyi_7RRKOuvQ1KPrrnMwB" data-ss-padding="" data-ss-border=""> 
+        <i class="fas fa-arrow-up" data-ss-id="_z03MhBu6YlFfxHkCK08_" data-ss-padding="" data-ss-border=""></i>
+    </button>
+    <footer class="main-footer" data-ss-id="captQaW2fVyzql56YbTnp" data-ss-padding="" data-ss-border="">
+        <div class="footer-grid container" data-ss-id="Pcp7rQwjCE3zYI-KNVP5e" data-ss-padding="" data-ss-border="">
+            <div class="footer-logo" data-ss-id="_6DzLsnpY0WLsmlcl1w2b" data-ss-padding="" data-ss-border="">
+                <div class="ssc-flex ssc-flex-wrap ssc-flex-column ssc-align-center ssc-justify-start footer-logo-flex" data-ss-id="Ra7S1ALYca-JQiDRkQcfi" data-ss-padding="" data-ss-border="">
+                    <a class="ss-image-link d-inline-block footer-logo-link" data-ss-url-form="pages" href="https://enviosdosruedas.com/delivery-envios-mensajeria-mdp" data-ss-url-form-id="9" data-ss-id="0cpiRS94DY_dOhU6H3r3O">
+                        <img src="./cssjs/LogoEnviosDosRuedas(1).webp" alt="Logo" class="footer-logo-img" data-ss-id="LkFUEu3k0ULoaHLH3q78W">
+                    </a>
+                    <div class="container-fluid footer-spacer" data-ss-id="Hyzoc2zMRtSgb4hZCCBPf" data-ss-padding="" data-ss-border=""></div>
+                    <div class="container" data-ss-id="RoAh9si-TwqnFiSTROYBf" data-ss-padding="" data-ss-border="">
+                        <h3 class="footer-title" data-ss-id="9rGVfB8ef4wZcPxVUQfGd" data-ss-padding="" data-ss-border="">Envios DosRuedas</h3>
+                        <p data-ss-id="o_0BzBQaAmNKxC9_pD5r1" data-ss-padding="" data-ss-border="">Tu solución confiable para mensajería y delivery en Mar del Plata.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-nav" data-ss-id="O1cfslH3hLK0npfPSt423" data-ss-padding="" data-ss-border="">
+                <h4 class="footer-title" data-ss-id="00usLgNQic5LRE8AvnhG5" data-ss-padding="" data-ss-border="">Menú</h4>
+                <nav aria-label="Navegación principal" data-ss-id="n3paHdGpi47PcTrQr-xbF" data-ss-padding="" data-ss-border="">
+                    <ul class="footer-links" data-ss-id="r-H67neiwwc6rXiz0_80o" data-ss-padding="" data-ss-border="">
+                        <li data-ss-id="sxoXyVnDzLtmF5kCrnnLK" data-ss-padding="" data-ss-border="">
+                            <a href="https://enviosdosruedas.com/delivery-envios-mensajeria-mdp" data-ss-id="KcRv6FFbcbLxeQLTeaEar" data-ss-padding="" data-ss-border="">
+                                <i class="fas fa-home" data-ss-id="BDCqzZDaCNJlTXA6zvGUf"></i>
+                                Inicio
+                            </a>
+                        </li>
+                        <li class="dropdown" data-ss-id="MoRQK6fsY2LeLj_50JQWW" data-ss-padding="" data-ss-border="">
+                            <a data-ss-id="AHNAOacf3m-n5NO2szUNr" data-ss-padding="" data-ss-border="">
+                                <i class="fas fa-truck-fast" data-ss-id="JzMjH7sVU7zsrggkBFyeL"></i>
+                                Servicios
+                            </a>
+                            <div class="dropdown-content" data-ss-id="UWKJtnXWjTLt4jqMJtlh9" data-ss-padding="" data-ss-border="">
+                                <a href="https://enviosdosruedas.com/mensajeria-envios-express" data-ss-id="EOM1xyQEfe0pxqHcU7etg" data-ss-padding="" data-ss-border="">
+                                    <i class="fas fa-shipping-fast" data-ss-id="GZ59LA5u_WbjzNVBu50Gg"></i>
+                                    Envíos Express
+                                </a>
+                                <a href="https://enviosdosruedas.com/mensajeria-envios-lowcost" data-ss-id="JBZliEQ_32bnkMw-MTHBW" data-ss-padding="" data-ss-border="">
+                                    <i class="fas fa-hand-holding-dollar" data-ss-id="CdNDvBxMchiTKPveFhBAv"></i>
+                                    Envíos LowCost
+                                </a>
+                                <a href="https://enviosdosruedas.com/delivery-moto-express" data-ss-id="6Vexf3e4ULb77L73kzJYk" data-ss-padding="" data-ss-border="">
+                                    <i class="fas fa-motorcycle" data-ss-id="3S7Ofc3N2xLAVe51ABD_-"></i>
+                                    Moto Express
+                                </a>
+                                <a href="https://enviosdosruedas.com/delivery-moto-fija" data-ss-id="2Ol-djXSJI_z74KyvUTUo" data-ss-padding="" data-ss-border="">
+                                    <i class="fas fa-clock" data-ss-id="kJn-Wt024EPCNdPpGo5RH"></i>
+                                    Moto Fija
+                                </a>
+                                <a href="https://enviosdosruedas.com/envios-emprendedores" data-ss-id="i8qBm0C9E9iPIWNPaPZ3O" data-ss-padding="" data-ss-border="">
+                                    <i class="fas fa-briefcase" data-ss-id="19FXkWNhsYIhPmAeX11XR"></i>
+                                    Plan Emprendedores
+                                </a>
+                                <a data-ss-url-form="pages" href="C:\Users\Matias\Desktop\01-Envios\envios-flex.html" data-ss-url-form-id="" data-ss-id="8EP2U4wacAYXKwyKbCKtD" data-ss-padding="" data-ss-border="">
+                                    <i class="fas fa-box"></i>
+                                    Envios Flex
+                                </a>
+                            </div>
+                        </li>
+                        <li class="dropdown" data-ss-id="9NLr7t7Hgtln6PYp0s0Pb" data-ss-padding="" data-ss-border="">
+                            <a data-ss-id="b3TPgEA6IxUbGRaLnDnT0" data-ss-padding="" data-ss-border="">
+                                <i class="fas fa-calculator" data-ss-id="JbGZNtngwesWcgcjzYf9R"></i>
+                                Cotizar
+                            </a>
+                            <div class="dropdown-content" data-ss-id="dF3ZCgXEJ3nGQHApMlgFg" data-ss-padding="" data-ss-border="">
+                                <a href="https://enviosdosruedas.com/cotizador-envios-express" data-ss-id="pYqKUSdfBBzX2YlmM6h1H" data-ss-padding="" data-ss-border="">
+                                    <i class="fas fa-bolt" data-ss-id="f3RD47ASrlcDT9B6wPfey"></i>
+                                    Cotizar Express
+                                </a>
+                                <a href="https://enviosdosruedas.com/cotizador-envios-lowcost" data-ss-id="wQv8QRve2snf2FyyOQBzb" data-ss-padding="" data-ss-border="">
+                                    <i class="fas fa-piggy-bank" data-ss-id="agHl8ifoUDckp0SiNb1R1"></i>
+                                    Cotizar LowCost
+                                </a>
+                            </div>
+                        </li>
+                        <li class="dropdown" data-ss-id="ZIyW2uzVOrnd_EXdhOL-T" data-ss-padding="" data-ss-border="">
+                            <a data-ss-id="1nTiFFM0qVorvpSNLcJPF" data-ss-padding="" data-ss-border="">
+                                <i class="fas fa-users" data-ss-id="SD1OeVWJXDae7X474KuIH"></i>
+                                Nosotros
+                            </a>
+                            <div class="dropdown-content" data-ss-id="c-HR5kab3IetexoLX7-RM" data-ss-padding="" data-ss-border="">
+                                <a href="https://enviosdosruedas.com/sobre-nosotros" data-ss-id="0ISM_bntotR6Tkf18CCxd" data-ss-padding="" data-ss-border="">
+                                    <i class="fas fa-building" data-ss-id="0mll7weXVohU83gMnK7si"></i>
+                                    Sobre Nosotros
+                                </a>
+                                <a href="https://enviosdosruedas.com/preguntasfrecuentes" data-ss-id="isZlE22yKbZhAa1Hj1gam" data-ss-padding="" data-ss-border="">
+                                    <i class="fas fa-question-circle" data-ss-id="Fw4ZdjJTnjZqc6IApmOde"></i>
+                                    Preguntas Frecuentes
+                                </a>
+                                <a href="https://enviosdosruedas.com/nuestrasredes" data-ss-id="C4OqUnh_XCP83-URYdPkH" data-ss-padding="" data-ss-border="">
+                                    <i class="fas fa-share-alt" data-ss-id="bFOAgTUGADn6z39MHIPDk"></i>
+                                    Nuestras Redes
+                                </a>
+                            </div>
+                        </li>
+                        <li data-ss-id="xFb6eC72MNanR-dB3tDCz" data-ss-padding="" data-ss-border="">
+                            <a href="https://enviosdosruedas.com/contacto" data-ss-id="yLN1a4nikjy581GywTTCR" data-ss-padding="" data-ss-border="">
+                                <i class="fas fa-envelope" data-ss-id="EY2h59x3YO7JV0GQazVap"></i>
+                                Contacto
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer-contact" data-ss-id="KvxyinMvDUsiokaFD4s5-" data-ss-padding="" data-ss-border="">
+                <h4 class="footer-title" data-ss-id="FtLncMd6q03vCGlgaehmN" data-ss-padding="" data-ss-border="">Contacto</h4>
+                <div class="contact-info" data-ss-id="Pejp9t2mbJizvYiMmiWPV" data-ss-padding="" data-ss-border="">
+                    <div class="contact-item" data-ss-id="hdBHVTNO-nbpjTtq3FEE3" data-ss-padding="" data-ss-border="">
+                        <i class="fas fa-map-marker-alt" data-ss-id="WvHvqeBlAwMN-uXJqe_wZ" data-ss-padding="" data-ss-border=""></i>
+                        <span data-ss-id="fWtqICEgmbrleFmMQc-hq" data-ss-padding="" data-ss-border="">Mar del Plata, Argentina</span>
+                    </div>
+                    <div class="contact-item" data-ss-id="rBS8lhI52qt-Ex0qk20Vc" data-ss-padding="" data-ss-border="">
+                        <i class="fas fa-phone" data-ss-id="8AkINMWkFReT21BvS8hE_" data-ss-padding="" data-ss-border=""></i>
+                        <a href="https://wa.me/+542236602699" class="whatsapp-link" data-ss-id="4FWoC-gYsa3Q07irLUkZv" data-ss-padding="" data-ss-border="">
+                            +54 223 660 2699
+                        </a>
+                    </div>
+                    <div class="contact-item" data-ss-id="F5Fdta9Tn9GJrrAFIyDMG" data-ss-padding="" data-ss-border="">
+                        <i class="fas fa-envelope" data-ss-id="T4Ktpcgpqs3BxyVkQyMqL" data-ss-padding="" data-ss-border=""></i>
+                        <a href="mailto:dosruedasmdq@gmail.com" data-ss-id="6LCQwcssDqq-dutc7-XVI" data-ss-padding="" data-ss-border="">dosruedasmdq@gmail.com</a>
+                    </div>
+                    <div class="social-container" data-ss-id="XwX0IBVwPrkYzJfp4iRWp" data-ss-padding="" data-ss-border="">
+                        <h3 class="social-title" data-ss-id="zpaJVqO3Un9C4QDHgZYnM" data-ss-padding="" data-ss-border="">Síguenos en:</h3>
+                        <div class="social-links" data-ss-id="xTVfu3myvv_buaR5hFISi" data-ss-padding="" data-ss-border="">
+                            <a href="https://instagram.com/enviosdosruedas" class="social-icon instagram" aria-label="Instagram" data-ss-id="zbpmqU2DuSHtsVylLoxnX" data-ss-padding="" data-ss-border="">
+                                <i class="fab fa-instagram" data-ss-id="YtdYdyiZP6SfOrHgCiF03"></i>
+                            </a>
+                            <a href="https://facebook.com/enviosdosruedas" class="social-icon facebook" aria-label="Facebook" data-ss-id="2cw7PP9MQ-mSu-Je8EvZM" data-ss-padding="" data-ss-border="">
+                                <i class="fab fa-facebook" data-ss-id="ku63_KCdYwCt06GRbxdFX"></i>
+                            </a>
+                            <a href="https://wa.me/+542236602699?text=Hola!%20Encontre%20su%20contacto%20en%20el%20sitio%20web%20y%20me%20gustaria%20mas%20informacion%20sobre%20su%20servicio." class="social-icon whatsapp" aria-label="WhatsApp" data-ss-id="SAvu6FPJhcdXpxpUfNJW1" data-ss-padding="" data-ss-border="">
+                                <i class="fab fa-whatsapp" data-ss-id="AGFnVkwY614C7xYotrQ8D"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom" data-ss-id="XNF64UoUenQrw0WiwJ_eS" data-ss-padding="" data-ss-border="">
+            <div class="container" data-ss-id="Xq5qR_QItYZlgkGm-uuzG" data-ss-padding="" data-ss-border="">
+                <p class="copyright" data-ss-id="QrYzz4cL-WjEawpnsvobY" data-ss-padding="" data-ss-border="">© 2024 Envíos DosRuedas. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+ 
+      <!-- Main Scripts -->
+      <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Objeto de utilidades para funciones comunes
+            const utils = {
+                // Función para activar/desactivar clases
+                toggleClass: (element, className, force) => {
+                    if (element) {
+                        if (force !== undefined) {
+                            element.classList[force ? 'add' : 'remove'](className);
+                        } else {
+                            element.classList.toggle(className);
+                        }
+                    }
+                },
+                
+                // Función para agregar eventos con verificación de existencia
+                addSafeEventListener: (element, event, callback) => {
+                    if (element) {
+                        element.addEventListener(event, callback);
+                    }
+                },
+                
+                // Función para seleccionar elementos con seguridad
+                select: (selector, parent = document) => parent.querySelector(selector),
+                selectAll: (selector, parent = document) => parent.querySelectorAll(selector)
+            };
+
+            // Navegación móvil
+            const initMobileNav = () => {
+                const mobileNavToggle = utils.select('.mobile-nav-toggle');
+                const navMenu = utils.select('.nav-menu');
+                const dropdowns = utils.selectAll('.dropdown');
+                
+                // Toggle del menú móvil
+                utils.addSafeEventListener(mobileNavToggle, 'click', () => {
+                    utils.toggleClass(navMenu, 'active');
+                    utils.toggleClass(document.body, 'nav-open');
+                });
+                
+                // Manejo de dropdowns
+                dropdowns.forEach(dropdown => {
+                    const link = utils.select('a', dropdown);
+                    
+                    utils.addSafeEventListener(link, 'click', (e) => {
+                        if (window.innerWidth <= 768) {
+                            e.preventDefault();
+                            utils.toggleClass(dropdown, 'active');
+                            
+                            // Cerrar otros dropdowns
+                            dropdowns.forEach(other => {
+                                if (other !== dropdown) {
+                                    utils.toggleClass(other, 'active', false);
+                                }
+                            });
+                        }
+                    });
+                });
+                
+                // Cerrar menú al hacer clic fuera
+                document.addEventListener('click', (e) => {
+                    if (!e.target.closest('.nav-menu') && !e.target.closest('.mobile-nav-toggle')) {
+                        utils.toggleClass(navMenu, 'active', false);
+                        utils.toggleClass(document.body, 'nav-open', false);
+                    }
+                });
+                
+                // Ajustar en cambio de tamaño
+                window.addEventListener('resize', () => {
+                    if (window.innerWidth > 768) {
+                        dropdowns.forEach(dropdown => utils.toggleClass(dropdown, 'active', false));
+                    }
+                });
+            };
+
+            // Funcionalidad de FAQ
+            const initFAQ = () => {
+                const pills = utils.selectAll('.nav-pill');
+                const sections = utils.selectAll('.faq-section');
+                const accordionTabs = utils.selectAll('.ss-accordion-tab');
+                const searchInput = document.getElementById('searchFaq');
+                
+                // Navegación por pestañas
+                pills.forEach(pill => {
+                    utils.addSafeEventListener(pill, 'click', () => {
+                        // Desactivar todas las pestañas y activar la actual
+                        pills.forEach(p => utils.toggleClass(p, 'active', false));
+                        utils.toggleClass(pill, 'active', true);
+                        
+                        // Mostrar/ocultar secciones según categoría
+                        const category = pill.dataset.category;
+                        sections.forEach(section => {
+                            section.style.display = (category === 'todos' || section.id === category) ? 'block' : 'none';
+                        });
+                    });
+                });
+                
+                // Funcionalidad de acordeón
+                accordionTabs.forEach(tab => {
+                    const btn = utils.select('.ss-accordion-btn', tab);
+                    
+                    utils.addSafeEventListener(btn, 'click', () => {
+                        const wasActive = tab.classList.contains('active');
+                        
+                        // Cerrar todos los tabs
+                        accordionTabs.forEach(t => utils.toggleClass(t, 'active', false));
+                        
+                        // Abrir el actual si no estaba abierto
+                        if (!wasActive) {
+                            utils.toggleClass(tab, 'active', true);
+                        }
+                    });
+                });
+                
+                // Búsqueda en FAQ
+                utils.addSafeEventListener(searchInput, 'input', (e) => {
+                    const searchTerm = e.target.value.toLowerCase().trim();
+                    
+                    accordionTabs.forEach(tab => {
+                        const question = utils.select('.ss-accordion-btn', tab)?.textContent.toLowerCase() || '';
+                        const answer = utils.select('.content', tab)?.textContent.toLowerCase() || '';
+                        const matches = question.includes(searchTerm) || answer.includes(searchTerm);
+                        
+                        // Mostrar/ocultar según coincidencia
+                        tab.style.display = (searchTerm === '' || matches) ? 'block' : 'none';
+                        
+                        // Expandir si hay coincidencia
+                        utils.toggleClass(tab, 'active', matches && searchTerm !== '');
+                    });
+                });
+            };
+
+            // Animaciones al hacer scroll
+            const initScrollAnimations = () => {
+                const observerOptions = {
+                    threshold: 0.1,
+                    rootMargin: '0px 0px -50px 0px'
+                };
+                
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            utils.toggleClass(entry.target, 'animate', true);
+                        }
+                    });
+                }, observerOptions);
+                
+                // Observar elementos para animación
+                utils.selectAll('.vision-card, .service-card, .feature-card').forEach(card => {
+                    observer.observe(card);
+                });
+            };
+
+            // Botón volver arriba
+            const initBackToTop = () => {
+                const backToTop = document.getElementById('backToTop');
+                
+                if (backToTop) {
+                    // Mostrar/ocultar botón según posición de scroll
+                    window.addEventListener('scroll', () => {
+                        const scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
+                        backToTop.classList.toggle('visible', scrollPosition > 20);
+                    });
+                    
+                    // Acción de volver arriba
+                    utils.addSafeEventListener(backToTop, 'click', () => {
+                        window.scrollTo({
+                            top: 0,
+                            behavior: 'smooth'
+                        });
+                    });
+                }
+            };
+
+            // Scroll suave para enlaces internos
+            const initSmoothScroll = () => {
+                utils.selectAll('a[href^="#"]:not([href="#"])').forEach(anchor => {
+                    utils.addSafeEventListener(anchor, 'click', function(e) {
+                        e.preventDefault();
+                        const targetId = this.getAttribute('href');
+                        const targetElement = document.querySelector(targetId);
+                        
+                        if (targetElement) {
+                            targetElement.scrollIntoView({
+                                behavior: 'smooth',
+                                block: 'start'
+                            });
+                        }
+                    });
+                });
+            };
+
+            // Inicialización de carrusel Bootstrap
+            const initCarousel = () => {
+                const carousel = utils.select('.carousel');
+                
+                if (carousel && typeof bootstrap !== 'undefined') {
+                    new bootstrap.Carousel(carousel, {
+                        interval: 4000,
+                        pause: 'hover'
+                    });
+                }
+            };
+
+            // Inicializar todas las funcionalidades
+            const init = () => {
+                initMobileNav();
+                initFAQ();
+                initScrollAnimations();
+                initBackToTop();
+                initSmoothScroll();
+                initCarousel();
+            };
+
+            // Ejecutar inicialización
+            init();
+        });
+    </script>
+</body>
+</html>
