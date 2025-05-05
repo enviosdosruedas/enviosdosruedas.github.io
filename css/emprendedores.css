@@ -1,41 +1,92 @@
-.emprendedores-bg {
-    background: linear-gradient(135deg, rgb(44, 82, 130), rgb(26, 54, 93));
-    margin-top: 0 !important;
-    margin-bottom: 0 !important;
+/* ======= Sección Emprendedores ======= */
+.emprendedores {
+    background: linear-gradient(135deg, var(--primary-color-dark), var(--primary-color));
+    color: var(--text-color-light);
+    border-radius: var(--border-radius-lg);
 }
+
+.emprendedores .text-accent {
+    color: var(--accent-color); /* Título en color acento */
+}
+
 .emprendedores-desc {
-    max-width: 800px;
-    font-size: 20px !important;
-    color: #fff !important;
+    color: rgba(255, 255, 255, 0.8); /* Descripción un poco transparente */
+    max-width: 70%; /* Limitar el ancho para mejor legibilidad */
+    margin: 0 auto;
 }
-.emprendedores-slider-img {
-    aspect-ratio: 24/9;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: 50% 50%;
-    width: 100%;
-    height: 200px;
-}
+
 .emprendedores-features {
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: repeat(3, 1fr);
-    padding-bottom: 30px !important;
+    margin-top: var(--spacing-xl);
 }
-.emprendedores-why {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+
+.emprendedores-features .feature {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 2rem;
+    text-align: center;
+    padding: var(--spacing-lg);
+    border-radius: var(--border-radius);
+    transition: var(--transition);
 }
-.text-accent {
-    color: #ffd700 !important;
+
+.emprendedores-features .feature i {
+    color: var(--accent-color);
+    margin-bottom: var(--spacing-md);
 }
-@media (max-width: 991px) {
-    .emprendedores-features, .emprendedores-why {
-        grid-template-columns: 1fr;
+
+.emprendedores-features .feature h3 {
+    color: var(--text-color-light);
+    margin-bottom: var(--spacing-sm);
+}
+
+.emprendedores-features .feature p {
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 0;
+}
+
+.emprendedores-features .feature:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+/* Estilos de Swiper (puedes ajustarlos) */
+.swiper {
+    width: 100%;
+    height: 400px; /* Ajusta la altura según necesites */
+    margin-bottom: var(--spacing-lg);
+}
+
+.swiper-slide {
+    text-align: center;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: var(--accent-color);
+}
+
+.swiper-pagination-bullet-active {
+    background-color: var(--accent-color);
+}
+
+/* Media Queries (Ajustes Responsivos) */
+@media (max-width: 767.98px) {
+    .emprendedores-desc {
+        max-width: 90%;
     }
-    .emprendedores-slider-img {
-        height: 120px;
+
+    .swiper {
+        height: 300px;
     }
 }

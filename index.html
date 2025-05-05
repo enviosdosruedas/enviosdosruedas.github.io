@@ -169,6 +169,7 @@
     <link rel="stylesheet" href="./css/hero.css" />
     <link rel="stylesheet" href="./css/vision-global.css" />
     <link rel="stylesheet" href="./css/cotizador.css" />
+    <link rel="stylesheet" href="./css/emprendedores.css" />
 
   </head>
 
@@ -376,32 +377,32 @@
 </section>
 
  <!-- ======= Section Cotizador ======= -->
- <section class="cotizador-section my-4 py-5 featured-services">
+ <section class="cotizador-section my-4 py-5 featured-services" id="cotizador" aria-labelledby="cotizador-title">
   <div class="container">
-      <div class="text-center mb-5">
-          <h2 class="fw-bold display-4 text-primary">Calcula el Precio de tu Envío</h2>
+      <header class="text-center mb-5">
+          <h2 id="cotizador-title" class="fw-bold display-4 text-primary">Calcula el Precio de tu Envío</h2>
           <p class="text-muted lead mb-5">
               Calculá el costo de tu envío de forma rápida y sencilla. ¡Elige el servicio que más se adapte a tus necesidades!
           </p>
-      </div>
+      </header>
       <div class="cotizador-grid">
-          <div class="feature-card hover-effect animate">
-              <div class="card-icon icon-lowcost">
+          <article class="feature-card hover-effect animate">
+              <div class="card-icon icon-lowcost" aria-hidden="true">
                   <i class="fas text-success fa-3x fa-piggy-bank"></i>
               </div>
               <h3>Cotizador Envíos LowCost</h3>
               <p class="mb-4">Servicio económico con entregas entre 10:00 y 19:00. Ideal para envíos que no requieren horario específico.</p>
               <ul class="feature-list">
                   <li>
-                      <i class="fas fa-dollar-sign icon-list"></i>
+                      <i class="fas fa-dollar-sign icon-list" aria-hidden="true"></i>
                       Precio económico
                   </li>
                   <li>
-                      <i class="fas fa-shield-alt icon-list"></i>
+                      <i class="fas fa-shield-alt icon-list" aria-hidden="true"></i>
                       Entrega garantizada
                   </li>
                   <li>
-                      <i class="fas fa-calendar-day icon-list"></i>
+                      <i class="fas fa-calendar-day icon-list" aria-hidden="true"></i>
                       Mismo día disponible
                   </li>
               </ul>
@@ -413,24 +414,24 @@
                       </a>
                   </div>
               </div>
-          </div>
-          <div class="feature-card hover-effect animate">
-              <div class="card-icon icon-express">
+          </article>
+          <article class="feature-card hover-effect animate">
+              <div class="card-icon icon-express" aria-hidden="true">
                   <i class="fas fa-3x text-warning fa-bolt"></i>
               </div>
               <h3>Cotizador Envíos Express</h3>
               <p class="mb-4">Entregas garantizadas el mismo día para pedidos antes de las 15:00.</p>
               <ul class="feature-list">
                   <li>
-                      <i class="fas fa-bolt icon-list"></i>
+                      <i class="fas fa-bolt icon-list" aria-hidden="true"></i>
                       Entrega mismo día
                   </li>
                   <li>
-                      <i class="fas fa-clock icon-list"></i>
+                      <i class="fas fa-clock icon-list" aria-hidden="true"></i>
                       Rango horario a elección
                   </li>
                   <li>
-                      <i class="fas fa-star icon-list"></i>
+                      <i class="fas fa-star icon-list" aria-hidden="true"></i>
                       Servicio prioritario
                   </li>
               </ul>
@@ -442,7 +443,7 @@
                       </a>
                   </div>
               </div>
-          </div>
+          </article>
       </div>
       <div class="text-center mt-5">
           <p class="mb-4 h5">¡Comunícate con nosotros!</p>
@@ -453,6 +454,70 @@
       </div>
   </div>
 </section>
+
+   <!-- ======= Section Emprendedores ======= -->
+   <section class="emprendedores my-4 py-5" id="emprendedores" aria-labelledby="emprendedores-title">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 id="emprendedores-title" class="fw-bold display-4 mb-3 text-accent">
+                Soluciones Especiales para Emprendedores
+            </h2>
+            <p class="mx-auto lead text-light emprendedores-desc">
+                Apoyamos a emprendedores con soluciones de mensajería y delivery confiables, rápidas y económicas.
+                Optimiza tu logística y dedica más tiempo a hacer crecer tu negocio.
+            </p>
+        </div>
+
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./img/Emprendedoresbannerrapidas3.webp" alt="Servicio a Emprendedores 1" class="img-fluid rounded shadow-lg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/Emprendedoresbannerrapidas2.webp" alt="Servicio a Emprendedores 2" class="img-fluid rounded shadow-lg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/Emprendedoresbannerrapidas.webp" alt="Servicio a Emprendedores 3" class="img-fluid rounded shadow-lg">
+                </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mt-5 emprendedores-features">
+            <div class="col">
+                <div class="feature bg-primary text-white rounded p-4 h-100 shadow">
+                    <i class="fas fa-shipping-fast fa-2x mb-3"></i>
+                    <h3 class="h5">Envíos Rápidos y Seguros</h3>
+                    <p class="mb-0">
+                        Agilizamos tus entregas para que tus productos lleguen a tiempo y en perfecto estado.
+                    </p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="feature bg-primary text-white rounded p-4 h-100 shadow">
+                    <i class="fas fa-hand-holding-usd fa-2x mb-3"></i>
+                    <h3 class="h5">Tarifas Competitivas</h3>
+                    <p class="mb-0">
+                        Ofrecemos precios accesibles que se adaptan a tu presupuesto, sin sacrificar la calidad del servicio.
+                    </p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="feature bg-primary text-white rounded p-4 h-100 shadow">
+                    <i class="fas fa-boxes fa-2x mb-3"></i>
+                    <h3 class="h5">Logística Personalizada</h3>
+                    <p class="mb-0">
+                        Adaptamos nuestros servicios a las necesidades específicas de tu negocio, desde el almacenamiento hasta la entrega.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
 
       <!-- ======= Footer ======= -->
       <button
@@ -979,6 +1044,28 @@
         </div>
       </footer>
     </main>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    // Inicialización de Swiper
+    document.addEventListener('DOMContentLoaded', function () {
+        const swiper = new Swiper('.swiper', {
+            loop: true,
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+    });
+</script>
     <script src="./js/inicio.js"></script>
   </body>
 </html>

@@ -1,71 +1,123 @@
-/* Sección Cotizador */
+/* ======= Sección Cotizador ======= */
 .cotizador-section {
-    background: linear-gradient(135deg, #f0f4f9, #dbe4f0);
-    margin-top: 0 !important;
-    margin-bottom: 0 !important;
+    /* Fondo más oscuro */
+    background-color: var(--primary-color-dark);
+    color: var(--text-color-light); /* Texto claro para contraste */
+    padding-top: 4rem; /* Mayor espaciado vertical */
+    padding-bottom: 4rem;
+}
+
+.cotizador-section .text-primary {
+    /* Usando un tono más claro del primario o el acento */
+    color: var(--accent-color);
+}
+
+.cotizador-section .text-muted {
+    color: rgba(255, 255, 255, 0.7); /* Gris claro semi-transparente */
 }
 
 .cotizador-grid {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 2.5rem;
-    padding-left: 0;
-    padding-right: 0;
-}
-
-@media (min-width: 768px) {
-    .cotizador-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 2.5rem;
-        padding-left: 2.5rem;
-        padding-right: 2.5rem;
-    }
-}
-
-.card-icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 1rem;
-    font-size: 2.5rem;
-}
-
-.icon-lowcost i {
-    color: #084298 !important;
-}
-
-.icon-express i {
-    color: #ffc107 !important;
-}
-
-.icon-list {
-    font-size: 1.5rem !important;
-    vertical-align: middle;
-    margin-right: 0.5rem;
-}
-
-.feature-list {
-    padding-left: 2rem;
-    margin-bottom: 1.5rem;
+    gap: 2rem;
 }
 
 .feature-card {
-    background: #fff;
-    border-radius: 1rem;
-    box-shadow: 0 4px 16px rgba(44,62,80,0.07);
-    padding: 2rem 1.5rem;
-    transition: box-shadow 0.3s;
+    /* Fondo casi negro para las tarjetas */
+    background-color: var(--primary-color);
+    border-radius: var(--border-radius);
+    padding: 2rem;
+    box-shadow: var(--shadow-lg); /* Sombra más pronunciada */
+    transition: var(--transition);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    color: var(--text-color-light); /* Texto claro en las tarjetas */
+    border: 1px solid var(--primary-color-light); /* Borde sutil */
 }
 
 .feature-card:hover {
-    box-shadow: 0 8px 24px rgba(44,62,80,0.13);
+    transform: translateY(-5px);
+    box-shadow: var(--shadow);
 }
 
-@media (max-width: 575.98px) {
-    .feature-card {
-        padding: 1.2rem 0.5rem;
-    }
-    .cotizador-section {
-        padding: 1.5rem 0.5rem;
+.feature-card .card-icon {
+    /* Fondo más claro para los íconos */
+    background-color: var(--primary-color-light);
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+}
+
+.feature-card .icon-lowcost {
+    color: var(--success-color);
+}
+
+.feature-card .icon-express {
+    color: var(--warning-color);
+}
+
+.feature-card h3 {
+    color: var(--accent-color); /* Acento para los títulos */
+    margin-bottom: 1rem;
+}
+
+.feature-card p {
+    color: rgba(255, 255, 255, 0.8); /* Gris claro semi-transparente */
+    margin-bottom: 1.5rem;
+}
+
+.feature-card .feature-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1.5rem;
+}
+
+.feature-card .feature-list li {
+    color: var(--text-color-light);
+    margin-bottom: 0.75rem;
+    display: flex;
+    align-items: center;
+}
+
+.feature-card .feature-list li i {
+    margin-right: 0.75rem;
+    color: var(--secondary-color-light); /* Un tono más claro del secundario */
+}
+
+.feature-card .hero-buttons {
+    margin-top: auto;
+}
+
+.hero-buttons .hero-button {
+    background-color: var(--secondary-color);
+    color: #fff;
+}
+
+.hero-buttons .hero-button:hover {
+    background-color: var(--secondary-color-dark);
+}
+
+/* Estilos para el enlace de WhatsApp */
+.cotizador-section .btn-success {
+    background-color: var(--success-color);
+    border-color: var(--success-color);
+    color: #fff;
+}
+
+.cotizador-section .btn-success:hover {
+    background-color: #218838; /* Un tono más oscuro de success */
+    border-color: #1e7e34;
+}
+
+/* Responsive Grid */
+@media (min-width: 768px) {
+    .cotizador-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
