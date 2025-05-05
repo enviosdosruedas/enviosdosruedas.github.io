@@ -409,3 +409,7 @@ img {
 .slide-in-up {
     animation: slideInUp 0.5s ease forwards;
 }
+
+.no-scroll {
+    overflow: hidden;
+}

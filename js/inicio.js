@@ -56,7 +56,29 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
+    // Función para manejar el menú móvil
+    const initMobileMenu = () => {
+        const mobileToggle = utils.select('.mobile-nav-toggle');
+        const navMenu = utils.select('.nav-menu');
+        const navOverlay = utils.select('.nav-overlay');
+
+        if (mobileToggle && navMenu) {
+            utils.addSafeEventListener(mobileToggle, 'click', () => {
+                utils.toggleClass(navMenu, 'active');
+                utils.toggleClass(navOverlay, 'active');
+                utils.toggleClass(document.body, 'no-scroll');
+            });
+
+            utils.addSafeEventListener(navOverlay, 'click', () => {
+                utils.toggleClass(navMenu, 'active', false);
+                utils.toggleClass(navOverlay, 'active', false);
+                utils.toggleClass(document.body, 'no-scroll', false);
+            });
+        }
+    };
+
     // Inicializar todas las funciones
     initScrollAnimations();
     initBackToTop();
+    initMobileMenu();
 });
