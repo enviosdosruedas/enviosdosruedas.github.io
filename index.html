@@ -163,6 +163,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/navbar.css" />
     <link rel="stylesheet" href="./css/footer.css" />
@@ -170,6 +171,9 @@
     <link rel="stylesheet" href="./css/vision-global.css" />
     <link rel="stylesheet" href="./css/cotizador.css" />
     <link rel="stylesheet" href="./css/emprendedores.css" />
+    <link rel="stylesheet" href="./css/serviciosdestacados.css" />
+    <link rel="stylesheet" href="./css/bannercarrusel.css" />
+
 
   </head>
 
@@ -456,39 +460,40 @@
 </section>
 
    <!-- ======= Section Emprendedores ======= -->
-   <section class="emprendedores my-4 py-5" id="emprendedores" aria-labelledby="emprendedores-title">
+   <section class="emprendedores my-5 py-5" id="emprendedores" aria-labelledby="emprendedores-title">
     <div class="container">
         <div class="text-center mb-5">
             <h2 id="emprendedores-title" class="fw-bold display-4 mb-3 text-accent">
                 Soluciones Especiales para Emprendedores
             </h2>
-            <p class="mx-auto lead text-light emprendedores-desc">
+            <p class="mx-auto lead emprendedores-desc">
                 Apoyamos a emprendedores con soluciones de mensajería y delivery confiables, rápidas y económicas.
                 Optimiza tu logística y dedica más tiempo a hacer crecer tu negocio.
             </p>
         </div>
 
+        <!-- Swiper -->
         <div class="swiper mySwiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <img src="./img/Emprendedoresbannerrapidas3.webp" alt="Servicio a Emprendedores 1" class="img-fluid rounded shadow-lg">
+                    <img src="./img/Emprendedoresbannerrapidas3.webp" alt="Servicio a Emprendedores 1" class="img-fluid rounded shadow" loading="lazy">
                 </div>
                 <div class="swiper-slide">
-                    <img src="./img/Emprendedoresbannerrapidas2.webp" alt="Servicio a Emprendedores 2" class="img-fluid rounded shadow-lg">
+                    <img src="./img/Emprendedoresbannerrapidas2.webp" alt="Servicio a Emprendedores 2" class="img-fluid rounded shadow" loading="lazy">
                 </div>
                 <div class="swiper-slide">
-                    <img src="./img/Emprendedoresbannerrapidas.webp" alt="Servicio a Emprendedores 3" class="img-fluid rounded shadow-lg">
+                    <img src="./img/Emprendedoresbannerrapidas.webp" alt="Servicio a Emprendedores 3" class="img-fluid rounded shadow" loading="lazy">
                 </div>
             </div>
+            <div class="swiper-pagination"></div>
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
-            <div class="swiper-pagination"></div>
         </div>
 
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mt-5 emprendedores-features">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mt-4 emprendedores-features">
             <div class="col">
-                <div class="feature bg-primary text-white rounded p-4 h-100 shadow">
-                    <i class="fas fa-shipping-fast fa-2x mb-3"></i>
+                <div class="feature h-100 shadow">
+                    <i class="fas fa-shipping-fast mb-3"></i>
                     <h3 class="h5">Envíos Rápidos y Seguros</h3>
                     <p class="mb-0">
                         Agilizamos tus entregas para que tus productos lleguen a tiempo y en perfecto estado.
@@ -496,8 +501,8 @@
                 </div>
             </div>
             <div class="col">
-                <div class="feature bg-primary text-white rounded p-4 h-100 shadow">
-                    <i class="fas fa-hand-holding-usd fa-2x mb-3"></i>
+                <div class="feature h-100 shadow">
+                    <i class="fas fa-hand-holding-usd mb-3"></i>
                     <h3 class="h5">Tarifas Competitivas</h3>
                     <p class="mb-0">
                         Ofrecemos precios accesibles que se adaptan a tu presupuesto, sin sacrificar la calidad del servicio.
@@ -505,8 +510,8 @@
                 </div>
             </div>
             <div class="col">
-                <div class="feature bg-primary text-white rounded p-4 h-100 shadow">
-                    <i class="fas fa-boxes fa-2x mb-3"></i>
+                <div class="feature h-100 shadow">
+                    <i class="fas fa-boxes mb-3"></i>
                     <h3 class="h5">Logística Personalizada</h3>
                     <p class="mb-0">
                         Adaptamos nuestros servicios a las necesidades específicas de tu negocio, desde el almacenamiento hasta la entrega.
@@ -517,7 +522,130 @@
     </div>
 </section>
 
+<!-- ======= Section Servicios Destacados ======= -->
+<section class="serviciosdestacados py-5" id="servicios-destacados" aria-labelledby="serviciosdestacados-title">
+  <div class="container">
+      <div class="text-center mb-5">
+          <h2 id="serviciosdestacados-title" class="fw-bold display-4 text-primary serviciosdestacados-title">
+              Nuestros Servicios Destacados
+              <div class="mx-auto serviciosdestacados-highlight-bar mt-2"></div>
+          </h2>
+          <p class="text-muted lead mb-5 serviciosdestacados-description">
+              Brindamos soluciones profesionales adaptadas a tus necesidades. ¡Vos encárgate de vender, nosotros hacemos el envío!
+          </p>
+      </div>
+      <div class="serviciosdestacados-grid">
+          <article class="serviciosdestacados-card hover-effect">
+              <div class="serviciosdestacados-icon express">
+                  <i class="fas fa-bolt"></i>
+              </div>
+              <div class="serviciosdestacados-content">
+                  <h3>Envíos Express</h3>
+                  <p class="mb-4">
+                      Entregas garantizadas el mismo día para pedidos solicitados antes de las 15:00.
+                  </p>
+                  <ul class="serviciosdestacados-list">
+                      <li><i class="fas fa-check"></i> Entrega mismo día</li>
+                      <li><i class="fas fa-check"></i> Rango horario a elección</li>
+                      <li><i class="fas fa-check"></i> Servicio prioritario</li>
+                  </ul>
+                  <div class="serviciosdestacados-buttons">
+                      <a class="hero-button primary" href="/mensajeria-envios-express">Información <i class="fas fa-circle-question"></i></a>
+                  </div>
+                  <div class="serviciosdestacados-tip">
+                      <i class="fas fa-lightbulb"></i>
+                      <p>Un embalaje adecuado asegura la integridad de tus productos durante el envío.</p>
+                  </div>
+              </div>
+          </article>
+          <article class="serviciosdestacados-card hover-effect">
+              <div class="serviciosdestacados-icon lowcost">
+                  <i class="fas fa-piggy-bank"></i>
+              </div>
+              <div class="serviciosdestacados-content">
+                  <h3>Envíos LowCost</h3>
+                  <p class="mb-4">
+                      Servicio económico con entregas entre 10:00 y 19:00. Ideal para envíos que no requieren horario específico.
+                  </p>
+                  <ul class="serviciosdestacados-list">
+                      <li><i class="fas fa-check"></i> Precio económico</li>
+                      <li><i class="fas fa-check"></i> Entrega garantizada</li>
+                      <li><i class="fas fa-check"></i> Mismo día disponible</li>
+                  </ul>
+                  <div class="serviciosdestacados-buttons">
+                      <a class="hero-button primary" href="/cotizador-envios-lowcost">Información <i class="fas fa-circle-question"></i></a>
+                  </div>
+                  <div class="serviciosdestacados-tip">
+                      <i class="fas fa-lightbulb"></i>
+                      <p>Un embalaje adecuado asegura la integridad de tus productos durante el envío.</p>
+                  </div>
+              </div>
+          </article>
+          <article class="serviciosdestacados-card hover-effect">
+              <div class="serviciosdestacados-icon gastronomico">
+                  <i class="fas fa-motorcycle"></i>
+              </div>
+              <div class="serviciosdestacados-content">
+                  <h3>Delivery Gastronómico</h3>
+                  <p class="mb-4">
+                      Servicio especializado para restaurantes y comercios gastronómicos. Entregas rápidas y cuidadosas para tus productos frescos.
+                  </p>
+                  <ul class="serviciosdestacados-list">
+                      <li><i class="fas fa-check"></i> Entrega en tiempo récord</li>
+                      <li><i class="fas fa-check"></i> Manipulación segura de alimentos</li>
+                      <li><i class="fas fa-check"></i> Cobertura en toda la ciudad</li>
+                  </ul>
+                  <div class="serviciosdestacados-buttons">
+                      <a class="hero-button primary" href="/delivery-gastronomico">Información <i class="fas fa-circle-question"></i></a>
+                  </div>
+                  <div class="serviciosdestacados-tip">
+                      <i class="fas fa-lightbulb"></i>
+                      <p>Elige envases adecuados para mantener la calidad de tus productos.</p>
+                  </div>
+              </div>
+          </article>
+      </div>
+  </div>
+</section>
+<!-- Fin Servicios Destacados -->
 
+<!-- ======= Section Social Banner ======= -->
+<section class="social-banner-section">
+  <div id="bannerCarousel" class="carousel slide banner-carousel" data-bs-ride="carousel">
+      <div class="social-banner">
+          <div class="social-carousel">
+              <div class="social-item instagram">
+                  <a href="https://www.instagram.com/enviosdosruedas/" target="_blank">
+                      <i class="fab fa-instagram"></i>
+                      <span>¡Síguenos en Instagram!</span>
+                  </a>
+              </div>
+              <div class="social-item facebook">
+                  <a href="https://www.facebook.com/enviosdosruedas" target="_blank">
+                      <i class="fab fa-facebook"></i>
+                      <span>¡Visítanos en Facebook!</span>
+                  </a>
+              </div>
+              <div class="social-item whatsapp">
+                  <a href="https://wa.me/+542236602699?text=%C2%A1Hola%21%20%F0%9F%91%8B%20Encontr%C3%A9%20su%20contacto%20en%20el%20sitio%20web%20y%20quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20servicios%20de%20mensajer%C3%ADa%20%F0%9F%93%A6%20y%20delivery%20%F0%9F%9B%B5.%20%C2%A1Gracias%21" target="_blank">
+                      <i class="fab fa-whatsapp"></i>
+                      <span>WhatsApp: 2236602699</span>
+                  </a>
+              </div>
+          </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#bannerCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#bannerCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+      </button>
+  </div>
+  
+
+</section>
 
       <!-- ======= Footer ======= -->
       <button
@@ -1044,26 +1172,33 @@
         </div>
       </footer>
     </main>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 <script>
-    // Inicialización de Swiper
-    document.addEventListener('DOMContentLoaded', function () {
-        const swiper = new Swiper('.swiper', {
+    // Esperar a que el DOM esté completamente cargado
+
+    document.addEventListener('DOMContentLoaded', function() {
+
+        // Inicializar Swiper
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
             loop: true,
             autoplay: {
-                delay: 4000,
+                delay: 3500,
                 disableOnInteraction: false,
             },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
             pagination: {
-                el: '.swiper-pagination',
+                el: ".swiper-pagination",
                 clickable: true,
             },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            }
+
+
         });
+
     });
 </script>
     <script src="./js/inicio.js"></script>

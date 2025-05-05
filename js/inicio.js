@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }, observerOptions);
 
         // Observar elementos para animación
-        utils.selectAll('.vision-card, .service-card, .feature-card').forEach(card => {
+        utils.selectAll('.vision-card, .service-card, .feature-card, .feature, .emprendedores-desc, .emprendedores .text-accent').forEach(card => {
             observer.observe(card);
         });
     };
@@ -91,8 +91,43 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
+    // Inicializar Swiper para la sección de emprendedores
+    const initSwiper = () => {
+        if (document.querySelector('.mySwiper')) {
+            new Swiper(".mySwiper", {
+                slidesPerView: 1,
+                spaceBetween: 30,
+                loop: true,
+                autoplay: {
+                    delay: 3500,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                breakpoints: {
+                    640: {
+                        slidesPerView: 1,
+                    },
+                    768: {
+                        slidesPerView: 1,
+                    },
+                    1024: {
+                        slidesPerView: 1,
+                    },
+                },
+            });
+        }
+    };
+
     // Inicializar todas las funciones
     initScrollAnimations();
     initBackToTop();
     initMobileMenu();
+    initSwiper();
 });
