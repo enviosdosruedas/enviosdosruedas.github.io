@@ -1,0 +1,157 @@
+/* ======= Sección Visión Global ======= */
+.vision-global {
+    background-color: var(--background-color-alt); /* Usando variable global */
+    position: relative;
+    overflow: hidden;
+}
+
+.vision-global .highlight-bar {
+    height: 4px;
+    width: 80px;
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color)); /* Usando variables globales */
+    border-radius: 2px;
+    margin-bottom: 1.5rem;
+}
+
+.vision-global .lead {
+    color: var(--text-color-light); /* Usando variable global */
+    max-width: 800px;
+    margin: 0 auto 2rem;
+}
+
+.vision-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.vision-card {
+    background-color: var(--background-color); /* Usando variable global */
+    border-radius: var(--border-radius); /* Usando variable global */
+    padding: 2rem 1.5rem;
+    text-align: center;
+    box-shadow: var(--shadow-sm); /* Usando variable global */
+    transition: var(--transition); /* Usando variable global */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.vision-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1); /* Manteniendo este valor específico */
+}
+
+.vision-card .icon-container {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); /* Usando variables globales */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+}
+
+.vision-card .icon {
+    font-size: 28px;
+    color: var(--background-color); /* Usando variable global */
+}
+
+.vision-card h3 {
+    color: var(--primary-color); /* Usando variable global */
+    font-size: 2rem;
+    font-weight: var(--font-weight-bold); /* Usando variable global */
+    margin-bottom: 0.75rem;
+}
+
+.vision-card p {
+    color: var(--text-color-light); /* Usando variable global */
+    margin-bottom: 0.5rem;
+}
+
+.vision-card .stars {
+    color: var(--accent-color); /* Usando variable global */
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+}
+
+.vision-card dl {
+    margin: 0;
+    padding: 0;
+}
+
+.vision-card dt {
+    font-weight: bold;
+}
+
+.vision-card dd {
+    margin-left: 0;
+    margin-bottom: 0.5rem;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* Animación de entrada */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.vision-card {
+    animation: fadeInUp 0.6s ease-out forwards;
+    opacity: 0;
+}
+
+.vision-card:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.vision-card:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.vision-card:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+/* Responsive */
+@media (max-width: 767.98px) {
+    .vision-card {
+        margin-bottom: 1.5rem;
+    }
+
+    .vision-cards-container {
+        grid-template-columns: 1fr; /* Cambiado de auto a 1fr */
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .vision-cards-container {
+        grid-template-columns: repeat(2, 1fr); /* Dos columnas en pantallas medianas */
+    }
+}
+
+@media (min-width: 992px) {
+    .vision-cards-container {
+        grid-template-columns: repeat(3, 1fr); /* Tres columnas en pantallas grandes */
+    }
+}

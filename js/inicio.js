@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
             });
 
             utils.addSafeEventListener(backToTop, 'click', () => {
-                window.scrollTo({top: 0, behavior: 'smooth'});
+                window.scrollTo({ top: 0, behavior: 'smooth' });
             });
         }
     };
