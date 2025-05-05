@@ -61,18 +61,32 @@ document.addEventListener('DOMContentLoaded', () => {
         const mobileToggle = utils.select('.mobile-nav-toggle');
         const navMenu = utils.select('.nav-menu');
         const navOverlay = utils.select('.nav-overlay');
+        const dropdowns = utils.selectAll('.dropdown');
 
         if (mobileToggle && navMenu) {
             utils.addSafeEventListener(mobileToggle, 'click', () => {
+                utils.toggleClass(mobileToggle, 'active');
                 utils.toggleClass(navMenu, 'active');
                 utils.toggleClass(navOverlay, 'active');
                 utils.toggleClass(document.body, 'no-scroll');
             });
 
             utils.addSafeEventListener(navOverlay, 'click', () => {
+                utils.toggleClass(mobileToggle, 'active', false);
                 utils.toggleClass(navMenu, 'active', false);
                 utils.toggleClass(navOverlay, 'active', false);
                 utils.toggleClass(document.body, 'no-scroll', false);
+            });
+
+            // Manejar dropdowns en móvil
+            dropdowns.forEach(dropdown => {
+                const trigger = dropdown.querySelector('a');
+                utils.addSafeEventListener(trigger, 'click', (e) => {
+                    if (window.innerWidth <= 768) {
+                        e.preventDefault();
+                        utils.toggleClass(dropdown, 'active');
+                    }
+                });
             });
         }
     };

@@ -192,27 +192,27 @@
 
 @media (max-width: 768px) {
     .nav-container {
-        padding: 0.8rem 1.5rem;
+        padding: 0.8rem 1rem;
     }
     
     .mobile-nav-toggle {
         display: block;
         z-index: 1002;
+        position: relative;
     }
     
     .nav-menu {
         position: fixed;
         top: 0;
         right: -100%;
-        width: 80%;
-        max-width: 350px;
+        width: 85%;
+        max-width: 300px;
         height: 100vh;
         background: var(--primary-color);
         transition: right 0.3s ease;
         z-index: 1001;
-        padding: 2rem 1rem;
+        padding: 5rem 1rem 2rem;
         overflow-y: auto;
-        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.2);
     }
     
     .nav-menu.active {
@@ -221,61 +221,21 @@
     
     .nav-list {
         flex-direction: column;
-        gap: 0.5rem;
-        width: 100%;
+        gap: 0;
     }
     
     .nav-list li {
         width: 100%;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
     }
     
     .nav-list a {
         padding: 1rem;
-        width: 100%;
-        border-radius: 8px;
-        justify-content: space-between;
+        justify-content: flex-start;
     }
-    
-    .nav-list a:hover {
-        background: rgba(255, 255, 255, 0.05);
-        transform: none;
-    }
-    
+
     .dropdown-content {
-        position: static;
-        opacity: 1;
-        visibility: visible;
-        transform: none;
-        box-shadow: none;
-        background: transparent;
-        padding-left: 1.5rem;
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.3s ease;
-        border-radius: 0;
-    }
-    
-    .dropdown.active .dropdown-content {
-        max-height: 500px;
-        padding-top: 0.5rem;
-        padding-bottom: 0.5rem;
-    }
-    
-    .dropdown-icon {
-        transition: transform 0.3s ease;
-    }
-    
-    .dropdown.active .dropdown-icon {
-        transform: rotate(180deg);
-    }
-    
-    .dropdown-content a {
-        padding: 0.8rem 1rem;
-        border-radius: 6px;
-    }
-    
-    .dropdown-content a:hover {
-        background: rgba(255, 255, 255, 0.05);
+        padding-left: 1rem;
     }
 }
 
